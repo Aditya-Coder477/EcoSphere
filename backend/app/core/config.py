@@ -11,11 +11,18 @@ class Settings(BaseSettings):
     PROJECT_NAME: str = "Carbon Footprint Platform API"
     API_V1_STR: str = "/api/v1"
     
-    # DB
-    SQLALCHEMY_DATABASE_URI: str = os.getenv(
-        "DATABASE_URL", 
-        "sqlite:///./carbon_platform.db"  # Default to local SQLite
-    )
+    # DB: Self-heal common environment variable and copy-paste errors
+    @property
+    def SQLALCHEMY_DATABASE_URI(self) -> str:
+        db_url = os.getenv("DATABASE_URL", "sqlite:///./carbon_platform.db")
+        if db_url:
+            # If it starts with legacy 'postgres://', replace with 'postgresql://' (required by SQLAlchemy 2.0)
+            if db_url.startswith("postgres://"):
+                db_url = db_url.replace("postgres://", "postgresql://", 1)
+            # If the protocol scheme is missing (e.g., copy-pasted Neon host starting with username@)
+            elif "://" not in db_url and "@" in db_url:
+                db_url = "postgresql://" + db_url
+        return db_url
     
     # Security placeholders
     SECRET_KEY: str = os.getenv("SECRET_KEY", "changeme")
