@@ -16,7 +16,6 @@ psycopg2-binary==2.9.9
 
 # LLM and RAG dependencies
 google-genai==0.2.0
-sentence-transformers==2.5.1
 faiss-cpu==1.8.0
 tenacity==8.2.3
 scikit-learn==1.4.1.post1

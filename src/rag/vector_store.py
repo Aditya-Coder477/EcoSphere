@@ -6,11 +6,14 @@ from pathlib import Path
 from typing import List, Dict, Optional
 from .schemas import Chunk
 from .exceptions import RAGError
+from src.utils.logger import get_logger
+
+log = get_logger(__name__)
 
 class VectorStoreManager:
     """Manages FAISS index and chunk metadata for similarity search."""
     
-    def __init__(self, dimension: int = 384, index_path: Optional[str] = None):
+    def __init__(self, dimension: int = 768, index_path: Optional[str] = None):
         self.dimension = dimension
         self.index = faiss.IndexFlatIP(dimension) # Inner product for cosine similarity (if normalized)
         self.chunks: Dict[int, Chunk] = {} # Map faiss ID to Chunk
@@ -72,16 +75,27 @@ class VectorStoreManager:
         chunks_file = directory / "chunks.json"
         meta_file = directory / "metadata.json"
         
-        if not index_file.exists() or not chunks_file.exists():
+        if not index_file.exists() or not chunks_file.exists() or not meta_file.exists():
             return # Start fresh if not found
             
-        self.index = faiss.read_index(str(index_file))
-        
-        with open(chunks_file, "r", encoding="utf-8") as f:
-            chunks_data = json.load(f)
-            self.chunks = {int(k): Chunk(**v) for k, v in chunks_data.items()}
+        try:
+            with open(meta_file, "r", encoding="utf-8") as f:
+                meta = json.load(f)
+                loaded_dimension = meta.get("dimension", 384)
+                
+            # If there is a dimension mismatch (e.g. upgraded index dimension), discard and rebuild
+            if loaded_dimension != self.dimension:
+                log.info(f"RAG Index dimension mismatch: expected {self.dimension}, loaded {loaded_dimension}. Rebuilding index...")
+                return
+                
+            self.index = faiss.read_index(str(index_file))
             
-        with open(meta_file, "r", encoding="utf-8") as f:
-            meta = json.load(f)
+            with open(chunks_file, "r", encoding="utf-8") as f:
+                chunks_data = json.load(f)
+                self.chunks = {int(k): Chunk(**v) for k, v in chunks_data.items()}
+                
             self.dimension = meta["dimension"]
             self.current_id = meta["current_id"]
+        except Exception as e:
+            log.warning(f"Failed to load existing RAG index: {e}. Starting fresh.")
+            return
