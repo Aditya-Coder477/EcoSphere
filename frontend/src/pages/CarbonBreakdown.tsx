@@ -9,7 +9,7 @@ import { mockBreakdownData, getDataOrFallback } from '../mocks';
 import { Car, Utensils, Zap, Trash2 } from 'lucide-react';
 import { cn } from '../utils/cn';
 
-const ICON_MAP: Record<string, React.FC<{ className?: string }>> = {
+const ICON_MAP: Record<string, React.ComponentType<any>> = {
   Car, Utensils, Zap, Trash2,
 };
 
