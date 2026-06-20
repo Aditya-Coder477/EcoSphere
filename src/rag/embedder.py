@@ -10,7 +10,7 @@ log = get_logger(__name__)
 class Embedder:
     """Generates embeddings using Google Gemini's API instead of a local PyTorch model."""
     
-    def __init__(self, model_name: str = "text-embedding-004"):
+    def __init__(self, model_name: str = "gemini-embedding-001"):
         self.model_name = model_name
         self.api_key = os.environ.get("GEMINI_API_KEY")
         self.client = None
@@ -41,9 +41,20 @@ class Embedder:
             
         try:
             log.debug(f"Calling Gemini API to embed {len(texts)} texts...")
+            
+            # Configure output dimension to 768 to match the FAISS index expected dimension
+            config = None
+            if self.model_name == "gemini-embedding-001":
+                try:
+                    from google.genai import types
+                    config = types.EmbedContentConfig(output_dimensionality=768)
+                except Exception as ex:
+                    log.warning(f"Could not import or use EmbedContentConfig: {ex}")
+            
             response = self.client.models.embed_content(
                 model=self.model_name,
-                contents=texts
+                contents=texts,
+                config=config
             )
             
             # Extract embedding vectors
