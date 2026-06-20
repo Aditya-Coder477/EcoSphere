@@ -50,21 +50,23 @@ class ElectricityCarbonCalculator:
             # Fallback to World average if country not found
             intensity = self.lookup.get_electricity_grid_intensity("World", inp.year)
             if intensity is None:
+                intensity = 0.475  # Direct local resilience fallback
                 flags["missing_grid_intensity"] = True
-                return CategoryEmission(
+                traces.append(FactorTrace(
                     category="electricity",
-                    emissions_kg_co2e=0.0,
-                    completeness_flags=flags,
-                    details={"country": inp.country}
-                )
-            
-            traces.append(FactorTrace(
-                category="electricity",
-                factor_value=intensity,
-                factor_unit="kg CO2 per kWh",
-                source_dataset="electricity_mix.csv",
-                description=f"World average grid intensity used as fallback for {inp.country}"
-            ))
+                    factor_value=0.475,
+                    factor_unit="kg CO2 per kWh",
+                    source_dataset="hardcoded_fallback",
+                    description="Global average grid intensity fallback"
+                ))
+            else:
+                traces.append(FactorTrace(
+                    category="electricity",
+                    factor_value=intensity,
+                    factor_unit="kg CO2 per kWh",
+                    source_dataset="electricity_mix.csv",
+                    description=f"World average grid intensity used as fallback for {inp.country}"
+                ))
         else:
             traces.append(FactorTrace(
                 category="electricity",
@@ -76,7 +78,7 @@ class ElectricityCarbonCalculator:
 
         # Determine kWh to use
         kwh_annual = 0.0
-        if inp.kwh_per_month is not None and inp.kwh_per_month > 0:
+        if inp.kwh_per_month is not None and inp.kwh_per_month >= 0:
             kwh_annual = inp.kwh_per_month * 12
         else:
             # Try to map to regional default

@@ -21,7 +21,17 @@ class RecommendationService:
         into a RecommendationContext.
         """
         # Default safety extractions
-        cat_emissions = user_profile.get("category_emissions", {})
+        raw_emissions = user_profile.get("category_emissions", {})
+        cat_emissions = {}
+        for k, v in raw_emissions.items():
+            if hasattr(v, "emissions_kg_co2e"):
+                cat_emissions[k] = float(v.emissions_kg_co2e)
+            elif isinstance(v, dict) and "emissions_kg_co2e" in v:
+                cat_emissions[k] = float(v["emissions_kg_co2e"])
+            elif v is not None:
+                cat_emissions[k] = float(v)
+            else:
+                cat_emissions[k] = 0.0
         
         # Calculate total if missing
         total = user_profile.get("total_emissions_kg_co2e")
