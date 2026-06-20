@@ -87,6 +87,8 @@ JSON Output:
                 
         facts_str = json.dumps(facts, indent=2)
         
+        weak_context_prompt = f"Weak Context Chunks (use with caution):\n{context_str}" if context_str else ""
+        
         return f"""
 You are an expert climate coach. Your tone should be {tone}.
 The user has asked a question: "{query}"
@@ -96,7 +98,7 @@ To provide a helpful answer, use the user's structured profile facts and safe ge
 User Profile & Platform Facts:
 {facts_str}
 
-{f"Weak Context Chunks (use with caution):\n{context_str}" if context_str else ""}
+{weak_context_prompt}
 
 Your output MUST be a JSON object containing:
 - "answer": A friendly, helpful fallback answer that starts with a direct response to the question, provides a safe general explanation of the climate science, and gives exactly one actionable suggestion based on their footprint profile or recommendations. Do not claim absolute certainty.
