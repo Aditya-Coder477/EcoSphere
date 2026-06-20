@@ -1,0 +1,45 @@
+{
+  "chart": {
+    "title": "Share of the population using at least basic sanitation services",
+    "subtitle": "Basic sanitation services are defined as improved sanitation facilities, such as toilets or latrines, which are not shared with other households.",
+    "citation": "WHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene (2025)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/share-of-population-with-improved-sanitation-faciltities?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "World",
+      "Low-income countries",
+      "High-income countries",
+      "Lower middle-income countries",
+      "Upper middle-income countries",
+      "Upper-middle-income countries",
+      "Lower-middle-income countries"
+    ]
+  },
+  "columns": {
+    "Share of the population using at least basic sanitation": {
+      "titleShort": "Share of the population using at least basic sanitation",
+      "titleLong": "Share of the population using at least basic sanitation",
+      "descriptionShort": "Proportion of people using improved sanitation facilities, such as toilets or latrines, that are not shared with other households.",
+      "descriptionKey": [
+        "Having access to safe and comfortable sanitation facilities is essential to a healthy and dignified life. Improved sanitation facilities help prevent the spread of diseases such as cholera, dysentery, and typhoid by providing safe separation from human waste.\n",
+        "Improved sanitation facilities are those designed to hygienically separate excreta from human contact, and include: flush/pour flush toilets connected to piped sewer systems, septic tanks or pit latrines; pit latrines with slabs (including ventilated pit latrines), and composting toilets.\n",
+        "Basic sanitation services are defined as improved sanitation facilities that are not shared with other households.\n",
+        "Safely managed sanitation services are defined as improved sanitation facilities that are not shared with other households and where excreta are safely disposed in situ or transported and treated off-site.\n",
+        "This data is provided by the WHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene (JMP). They compile data from nationally representative household surveys and censuses, administrative data and service provider data. To learn more, see the [JMP Methodology](https://washdata.org/topics/methods/data-sources).\n",
+        "This data reflects actual service use, which is directly linked to health outcomes and can be consistently measured across countries using household surveys. It is possible to theoretically have access to some kind of water and sanitation infrastructure, but not use them for daily needs. Therefore we refer to \"use\" or \"using\" rather than \"access\" to better reflect the underlying data.\n"
+      ],
+      "shortUnit": "%",
+      "unit": "%",
+      "timespan": "2000-2024",
+      "type": "Numeric",
+      "owidVariableId": 1132764,
+      "shortName": "san_basal__residence_total",
+      "lastUpdated": "2025-12-08",
+      "nextUpdate": "2027-12-08",
+      "citationShort": "WHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene (2025) – processed by Our World in Data",
+      "citationLong": "WHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene (2025) – processed by Our World in Data. “Share of the population using at least basic sanitation” [dataset]. World Health Organization/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene, “WHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene (JMP) 2000-2024 report” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1132764.metadata.json"
+    }
+  },
+  "dateDownloaded": "2026-06-10",
+  "activeFilters": {}
+}

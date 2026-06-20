@@ -1,0 +1,105 @@
+# Python caching & environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+.mypy_cache/
+.venv/
+venv/
+env/
+ENV/
+htmlcov/
+.tox/
+.nox/
+
+# Node modules & build artifacts
+node_modules/
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+.output/
+.cache/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environments, Secrets & Credentials
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*
+secrets.env
+*.pem
+*.key
+credentials.json
+service-account.json
+
+# IDE / Editors
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS / System
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Log Files
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# SQLite / Database Files
+*.db
+*.sqlite
+*.sqlite3
+carbon_platform.db
+
+# FAISS / Vector Stores & Embedding Caches
+*.faiss
+*.index
+.rag_index/
+vector_store/
+embeddings_cache/
+
+# Model Artifacts
+*.pkl
+*.h5
+*.onnx
+*.pt
+*.bin
+models/
+
+# Jupyter Notebooks checkpoint
+.ipynb_checkpoints/
+
+# Generated Datasets & Output Cache
+datasets/cleaned/
+datasets/engineered/
+datasets/merged/
+pipeline_report.txt
+feature_lineage.json
+data_dictionary.csv
+
+# Local Deployment Artifacts
+.vercel/
+.netlify/
+*.tar.gz
+*.zip
+*.tar
+

@@ -1,0 +1,133 @@
+{
+  "chart": {
+    "title": "Distribution of population between different poverty lines",
+    "subtitle": "This data is adjusted for inflation and differences in living costs between countries.",
+    "note": "This data is expressed in international-$ at 2021 prices. Depending on the country and year, it relates to income (measured after taxes and benefits) or to consumption, per capita.",
+    "citation": "World Bank Poverty and Inequality Platform (2026)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/distribution-of-population-poverty-thresholds?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "World"
+    ]
+  },
+  "columns": {
+    "Number of people not in poverty (above $10 a day, 2021 prices)": {
+      "titleShort": "Above $10 a day",
+      "titleLong": "Above $10 a day",
+      "descriptionShort": "Number of people living in households with an income or consumption above $10 per day.",
+      "descriptionKey": [
+        "This data is expressed in constant international dollars to adjust for inflation and differences in living costs between countries. Read more in our article, [What are international dollars?](https://ourworldindata.org/international-dollars)",
+        "Many people, today and in the past, have no formal monetary income. This data accounts for that by including the estimated value of non-market income, such as food grown by subsistence farmers for their own use.",
+        "The data comes from the World Bank's Poverty and Inequality Platform (PIP), which draws on national household surveys. Regional and global estimates are extrapolated to the year of the data release using GDP growth estimates and forecasts. For more details about the methodology, please refer to the [World Bank PIP documentation](https://datanalytics.worldbank.org/PIP-Methodology/lineupestimates.html#nowcasts).",
+        "Depending on the country and year, the data refers either to income (after taxes and benefits) or to consumption, per capita. These are not perfectly comparable — consumption tends to be more evenly distributed than income. For most countries, we have only one option available. But when there is a mix of consumption and income data points, we process the data to keep one observation per country and year."
+      ],
+      "descriptionProcessing": "For most countries in the dataset, estimates relate to disposable income or consumption, for all available years. Several countries, however, have a mix of income and consumption data points, with both data types sometimes available for particular years.\n\nIn most of our charts, we present the data with some data points dropped to present a single series for each country. This allows us to make readable visualizations that combine multiple countries. In choosing which data points to keep, we strike a balance between maintaining comparability over time and showing as long a time series as possible. As such, the exact approach varies across countries.",
+      "shortUnit": "",
+      "unit": "people",
+      "timespan": "1963-2026",
+      "type": "Numeric",
+      "owidVariableId": 1218627,
+      "shortName": "headcount_above__ppp_version_2021__poverty_line_1000__welfare_type_income_or_consumption__table_income_or_consumption_consolidated__survey_comparability_no_spells",
+      "lastUpdated": "2026-03-24",
+      "nextUpdate": "2026-09-20",
+      "citationShort": "World Bank Poverty and Inequality Platform (2026) – with major processing by Our World in Data",
+      "citationLong": "World Bank Poverty and Inequality Platform (2026) – with major processing by Our World in Data. “Above $10 a day – World Bank” [dataset]. World Bank Poverty and Inequality Platform, “World Bank Poverty and Inequality Platform (PIP) 20260324_2021, 20260324_2017” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1218627.metadata.json"
+    },
+    "Number of people in poverty (between $8.30 and $10 a day, 2021 prices)": {
+      "titleShort": "$8.30-$10 a day",
+      "titleLong": "$8.30-$10 a day",
+      "descriptionShort": "Number of people living in households with an income or consumption between $8.30 and $10 per day.",
+      "descriptionKey": [
+        "This data is expressed in constant international dollars to adjust for inflation and differences in living costs between countries. Read more in our article, [What are international dollars?](https://ourworldindata.org/international-dollars)",
+        "Many people, today and in the past, have no formal monetary income. This data accounts for that by including the estimated value of non-market income, such as food grown by subsistence farmers for their own use.",
+        "The data comes from the World Bank's Poverty and Inequality Platform (PIP), which draws on national household surveys. Regional and global estimates are extrapolated to the year of the data release using GDP growth estimates and forecasts. For more details about the methodology, please refer to the [World Bank PIP documentation](https://datanalytics.worldbank.org/PIP-Methodology/lineupestimates.html#nowcasts).",
+        "Depending on the country and year, the data refers either to income (after taxes and benefits) or to consumption, per capita. These are not perfectly comparable — consumption tends to be more evenly distributed than income. For most countries, we have only one option available. But when there is a mix of consumption and income data points, we process the data to keep one observation per country and year."
+      ],
+      "descriptionProcessing": "For most countries in the dataset, estimates relate to disposable income or consumption, for all available years. Several countries, however, have a mix of income and consumption data points, with both data types sometimes available for particular years.\n\nIn most of our charts, we present the data with some data points dropped to present a single series for each country. This allows us to make readable visualizations that combine multiple countries. In choosing which data points to keep, we strike a balance between maintaining comparability over time and showing as long a time series as possible. As such, the exact approach varies across countries.",
+      "shortUnit": "",
+      "unit": "people",
+      "timespan": "1963-2026",
+      "type": "Numeric",
+      "owidVariableId": 1219387,
+      "shortName": "headcount_between__ppp_version_2021__poverty_line_830_and_1000__welfare_type_income_or_consumption__table_income_or_consumption_consolidated__survey_comparability_no_spells",
+      "lastUpdated": "2026-03-24",
+      "nextUpdate": "2026-09-20",
+      "citationShort": "World Bank Poverty and Inequality Platform (2026) – with major processing by Our World in Data",
+      "citationLong": "World Bank Poverty and Inequality Platform (2026) – with major processing by Our World in Data. “$8.30-$10 a day – World Bank” [dataset]. World Bank Poverty and Inequality Platform, “World Bank Poverty and Inequality Platform (PIP) 20260324_2021, 20260324_2017” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1219387.metadata.json"
+    },
+    "Number of people in poverty (between $4.20 and $8.30 a day, 2021 prices)": {
+      "titleShort": "$4.20-$8.30 a day",
+      "titleLong": "$4.20-$8.30 a day",
+      "descriptionShort": "Number of people living in households with an income or consumption between $4.20 and $8.30 per day.",
+      "descriptionKey": [
+        "This data is expressed in constant international dollars to adjust for inflation and differences in living costs between countries. Read more in our article, [What are international dollars?](https://ourworldindata.org/international-dollars)",
+        "Many people, today and in the past, have no formal monetary income. This data accounts for that by including the estimated value of non-market income, such as food grown by subsistence farmers for their own use.",
+        "The data comes from the World Bank's Poverty and Inequality Platform (PIP), which draws on national household surveys. Regional and global estimates are extrapolated to the year of the data release using GDP growth estimates and forecasts. For more details about the methodology, please refer to the [World Bank PIP documentation](https://datanalytics.worldbank.org/PIP-Methodology/lineupestimates.html#nowcasts).",
+        "Depending on the country and year, the data refers either to income (after taxes and benefits) or to consumption, per capita. These are not perfectly comparable — consumption tends to be more evenly distributed than income. For most countries, we have only one option available. But when there is a mix of consumption and income data points, we process the data to keep one observation per country and year."
+      ],
+      "descriptionProcessing": "For most countries in the dataset, estimates relate to disposable income or consumption, for all available years. Several countries, however, have a mix of income and consumption data points, with both data types sometimes available for particular years.\n\nIn most of our charts, we present the data with some data points dropped to present a single series for each country. This allows us to make readable visualizations that combine multiple countries. In choosing which data points to keep, we strike a balance between maintaining comparability over time and showing as long a time series as possible. As such, the exact approach varies across countries.",
+      "shortUnit": "",
+      "unit": "people",
+      "timespan": "1963-2026",
+      "type": "Numeric",
+      "owidVariableId": 1219379,
+      "shortName": "headcount_between__ppp_version_2021__poverty_line_420_and_830__welfare_type_income_or_consumption__table_income_or_consumption_consolidated__survey_comparability_no_spells",
+      "lastUpdated": "2026-03-24",
+      "nextUpdate": "2026-09-20",
+      "citationShort": "World Bank Poverty and Inequality Platform (2026) – with major processing by Our World in Data",
+      "citationLong": "World Bank Poverty and Inequality Platform (2026) – with major processing by Our World in Data. “$4.20-$8.30 a day – World Bank” [dataset]. World Bank Poverty and Inequality Platform, “World Bank Poverty and Inequality Platform (PIP) 20260324_2021, 20260324_2017” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1219379.metadata.json"
+    },
+    "Number of people in poverty (between $3 and $4.20 a day, 2021 prices)": {
+      "titleShort": "$3-$4.20 a day",
+      "titleLong": "$3-$4.20 a day",
+      "descriptionShort": "Number of people living in households with an income or consumption between $3 and $4.20 per day.",
+      "descriptionKey": [
+        "This data is expressed in constant international dollars to adjust for inflation and differences in living costs between countries. Read more in our article, [What are international dollars?](https://ourworldindata.org/international-dollars)",
+        "Many people, today and in the past, have no formal monetary income. This data accounts for that by including the estimated value of non-market income, such as food grown by subsistence farmers for their own use.",
+        "The data comes from the World Bank's Poverty and Inequality Platform (PIP), which draws on national household surveys. Regional and global estimates are extrapolated to the year of the data release using GDP growth estimates and forecasts. For more details about the methodology, please refer to the [World Bank PIP documentation](https://datanalytics.worldbank.org/PIP-Methodology/lineupestimates.html#nowcasts).",
+        "Depending on the country and year, the data refers either to income (after taxes and benefits) or to consumption, per capita. These are not perfectly comparable — consumption tends to be more evenly distributed than income. For most countries, we have only one option available. But when there is a mix of consumption and income data points, we process the data to keep one observation per country and year."
+      ],
+      "descriptionProcessing": "For most countries in the dataset, estimates relate to disposable income or consumption, for all available years. Several countries, however, have a mix of income and consumption data points, with both data types sometimes available for particular years.\n\nIn most of our charts, we present the data with some data points dropped to present a single series for each country. This allows us to make readable visualizations that combine multiple countries. In choosing which data points to keep, we strike a balance between maintaining comparability over time and showing as long a time series as possible. As such, the exact approach varies across countries.",
+      "shortUnit": "",
+      "unit": "people",
+      "timespan": "1963-2026",
+      "type": "Numeric",
+      "owidVariableId": 1219370,
+      "shortName": "headcount_between__ppp_version_2021__poverty_line_300_and_420__welfare_type_income_or_consumption__table_income_or_consumption_consolidated__survey_comparability_no_spells",
+      "lastUpdated": "2026-03-24",
+      "nextUpdate": "2026-09-20",
+      "citationShort": "World Bank Poverty and Inequality Platform (2026) – with major processing by Our World in Data",
+      "citationLong": "World Bank Poverty and Inequality Platform (2026) – with major processing by Our World in Data. “$3-$4.20 a day – World Bank” [dataset]. World Bank Poverty and Inequality Platform, “World Bank Poverty and Inequality Platform (PIP) 20260324_2021, 20260324_2017” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1219370.metadata.json"
+    },
+    "Number of people in poverty ($3 a day, 2021 prices)": {
+      "titleShort": "Below $3 a day",
+      "titleLong": "Below $3 a day",
+      "descriptionShort": "Number of people living in households with an income or consumption below $3 per day.",
+      "descriptionKey": [
+        "The World Bank defines extreme poverty as living on less than $3 per day. This threshold, known as the \"International Poverty Line\", is set so that poverty can be compared across countries. This indicator plays an important and successful role in focusing the world's attention on the very poorest people. The UN uses this indicator to track progress towards [ending extreme poverty by 2030](https://ourworldindata.org/sdgs/no-poverty).",
+        "Two centuries ago, most of the world's population was extremely poor. Many believed that widespread poverty was inevitable. But this turned out to be wrong. Economic growth is possible, and poverty can decline. With this poverty line, we can track whether countries are leaving the worst poverty behind.",
+        "This data is expressed in constant international dollars to adjust for inflation and differences in living costs between countries. Read more in our article, [What are international dollars?](https://ourworldindata.org/international-dollars)",
+        "Many people, today and in the past, have no formal monetary income. This data accounts for that by including the estimated value of non-market income, such as food grown by subsistence farmers for their own use.",
+        "The data comes from the World Bank's Poverty and Inequality Platform (PIP), which draws on national household surveys. Regional and global estimates are extrapolated to the year of the data release using GDP growth estimates and forecasts. For more details about the methodology, please refer to the [World Bank PIP documentation](https://datanalytics.worldbank.org/PIP-Methodology/lineupestimates.html#nowcasts).",
+        "Depending on the country and year, the data refers either to income (after taxes and benefits) or to consumption, per capita. These are not perfectly comparable — consumption tends to be more evenly distributed than income. For most countries, we have only one option available. But when there is a mix of consumption and income data points, we process the data to keep one observation per country and year."
+      ],
+      "descriptionProcessing": "For most countries in the dataset, estimates relate to disposable income or consumption, for all available years. Several countries, however, have a mix of income and consumption data points, with both data types sometimes available for particular years.\n\nIn most of our charts, we present the data with some data points dropped to present a single series for each country. This allows us to make readable visualizations that combine multiple countries. In choosing which data points to keep, we strike a balance between maintaining comparability over time and showing as long a time series as possible. As such, the exact approach varies across countries.",
+      "shortUnit": "",
+      "unit": "people",
+      "timespan": "1963-2026",
+      "type": "Numeric",
+      "owidVariableId": 1217712,
+      "shortName": "headcount__ppp_version_2021__poverty_line_300__welfare_type_income_or_consumption__table_income_or_consumption_consolidated__survey_comparability_no_spells",
+      "lastUpdated": "2026-03-24",
+      "nextUpdate": "2026-09-20",
+      "citationShort": "World Bank Poverty and Inequality Platform (2026) – with major processing by Our World in Data",
+      "citationLong": "World Bank Poverty and Inequality Platform (2026) – with major processing by Our World in Data. “Below $3 a day – World Bank” [dataset]. World Bank Poverty and Inequality Platform, “World Bank Poverty and Inequality Platform (PIP) 20260324_2021, 20260324_2017” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1217712.metadata.json"
+    }
+  },
+  "dateDownloaded": "2026-06-10",
+  "activeFilters": {}
+}

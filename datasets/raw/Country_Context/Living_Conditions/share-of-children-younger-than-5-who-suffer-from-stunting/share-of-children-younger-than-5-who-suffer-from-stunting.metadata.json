@@ -1,0 +1,34 @@
+{
+  "chart": {
+    "title": "Malnutrition: Share of children who are stunted",
+    "subtitle": "Share of children younger than five years old who are defined as stunted. Stunting is when a child is significantly shorter than the average for their age. It is a consequence of poor nutrition or repeated infection.",
+    "citation": "World Health Organization - Global Health Observatory (2026)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/share-of-children-younger-than-5-who-suffer-from-stunting?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "China",
+      "Colombia",
+      "Kenya",
+      "Peru",
+      "Bangladesh",
+      "United States"
+    ]
+  },
+  "columns": {
+    "Stunting prevalence among children under 5 years of age (% height-for-age <-2 SD), survey-based estimates - Sex: both sexes": {
+      "titleShort": "Stunting prevalence among children under 5 years of age (% height-for-age <-2 SD), survey-based estimates - Sex: both sexes",
+      "titleLong": "Stunting prevalence among children under 5 years of age (% height-for-age <-2 SD), survey-based estimates - Sex: both sexes",
+      "unit": "%",
+      "timespan": "1983-2024",
+      "type": "Numeric",
+      "owidVariableId": 1256621,
+      "shortName": "stunting_prevalence_among_children_under_5_years_of_age__pct_height_for_age__lt__2_sd__survey_based_estimates__sex_both_sexes",
+      "lastUpdated": "2026-05-22",
+      "nextUpdate": "2027-05-22",
+      "citationShort": "World Health Organization - Global Health Observatory (2026) – with minor processing by Our World in Data",
+      "citationLong": "World Health Organization - Global Health Observatory (2026) – with minor processing by Our World in Data. “Stunting prevalence among children under 5 years of age (% height-for-age <-2 SD), survey-based estimates - Sex: both sexes – WHO” [dataset]. World Health Organization, “Global Health Observatory” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1256621.metadata.json"
+    }
+  },
+  "dateDownloaded": "2026-06-10",
+  "activeFilters": {}
+}

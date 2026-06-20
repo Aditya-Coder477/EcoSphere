@@ -1,0 +1,11 @@
+mode,unit,co2e_kg_per_unit,notes
+Walking,passenger-km,0.0,Synthetic placeholder; treated as zero direct operational emissions
+Cycling,passenger-km,0.0,Synthetic placeholder; treated as zero direct operational emissions
+Metro/Subway,passenger-km,0.041,Synthetic demo factor
+Electric Train,passenger-km,0.03,Synthetic demo factor
+Bus,passenger-km,0.089,Synthetic demo factor
+Car - solo,vehicle-km,0.192,Synthetic demo factor
+Carpool,vehicle-km,0.095,Synthetic demo factor
+Motorcycle,vehicle-km,0.103,Synthetic demo factor
+Short-haul Flight,passenger-km,0.255,Synthetic demo factor
+Long-haul Flight,passenger-km,0.163,Synthetic demo factor

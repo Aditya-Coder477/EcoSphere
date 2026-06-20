@@ -1,0 +1,1001 @@
+user_id,age,occupation,city_type,commute_mode,commute_days_per_week,avg_commute_distance_km_per_day,weekly_commute_distance_km,monthly_flight_distance_km,monthly_ride_share_km,vehicle_ownership,estimated_monthly_transport_emissions_kg_co2e
+U0001,38,Office Worker,Rural,Car - solo,6,19.7,118.0,262.7,0.3,Car,165.18
+U0002,36,Business Traveler,Metro,Car - solo,4,2.3,9.3,544.7,14.2,Car,99.24
+U0003,47,Office Worker,Urban,Bus,4,25.4,101.4,154.6,3.9,Shared,65.04
+U0004,35,Homemaker,Rural,Car - solo,6,14.4,86.3,478.5,10.3,Car,151.74
+U0005,28,Homemaker,Metro,Bus,6,2.0,12.2,127.6,7.9,Shared,38.74
+U0006,29,Remote Worker,Rural,Cycling,4,8.6,34.6,54.7,1.0,None,9.1
+U0007,48,Business Traveler,Metro,Motorcycle,6,13.0,77.8,263.2,4.2,Two-wheeler,78.39
+U0008,39,Office Worker,Urban,Metro/Subway,6,3.8,22.6,95.8,7.4,Shared,29.85
+U0009,26,Freelancer,Urban,Bus,4,10.5,42.1,74.0,2.7,Shared,28.81
+U0010,22,Freelancer,Semi-Urban,Walking,4,7.0,28.0,294.5,9.0,None,76.81
+U0011,27,Remote Worker,Semi-Urban,Walking,5,1.6,8.2,11.2,2.7,None,2.35
+U0012,29,Student,Urban,Metro/Subway,4,4.3,17.4,3.2,0.0,Shared,3.61
+U0013,30,Student,Metro,Electric Train,3,7.5,22.4,146.8,5.1,Shared,27.81
+U0014,41,Shop Owner,Urban,Motorcycle,5,31.1,155.7,27.9,3.7,Two-wheeler,74.71
+U0015,24,Freelancer,Metro,Bus,5,4.5,22.6,189.9,18.3,Shared,43.16
+U0016,29,Remote Worker,Semi-Urban,Bus,3,11.1,33.3,135.8,1.4,Shared,47.74
+U0017,50,Homemaker,Semi-Urban,Motorcycle,5,23.1,115.4,124.8,4.7,Two-wheeler,84.2
+U0018,18,Office Worker,Urban,Motorcycle,6,20.5,122.9,225.5,1.5,Two-wheeler,91.84
+U0019,62,Retired,Urban,Metro/Subway,5,13.2,66.1,806.2,0.5,Shared,143.25
+U0020,32,Student,Urban,Cycling,3,8.3,24.9,166.3,11.5,None,29.32
+U0021,41,Homemaker,Urban,Bus,5,10.6,52.8,191.5,4.1,Shared,52.33
+U0022,50,Freelancer,Rural,Bus,6,16.3,97.9,13.5,9.2,Shared,42.97
+U0023,20,Freelancer,Urban,Motorcycle,6,23.9,143.6,132.2,2.3,Two-wheeler,86.01
+U0024,32,Remote Worker,Metro,Walking,4,10.5,42.1,111.3,0.6,None,18.27
+U0025,19,Student,Urban,Metro/Subway,5,15.0,74.9,105.7,8.6,Shared,32.17
+U0026,35,Student,Metro,Electric Train,4,15.2,60.8,19.3,0.8,Shared,12.96
+U0027,27,Remote Worker,Metro,Carpool,5,27.9,139.5,15.0,6.6,Shared,62.5
+U0028,51,Student,Metro,Walking,3,15.2,45.7,101.8,0.4,None,16.68
+U0029,20,Remote Worker,Urban,Walking,6,0.5,3.0,295.6,0.4,None,48.25
+U0030,31,Student,Urban,Electric Train,1,17.7,17.7,49.3,21.2,Shared,18.95
+U0031,65,Homemaker,Metro,Metro/Subway,5,6.3,31.3,82.4,0.0,Shared,19.0
+U0032,25,Student,Semi-Urban,Metro/Subway,4,13.5,54.0,48.3,7.0,Shared,23.25
+U0033,40,Freelancer,Urban,Motorcycle,5,16.8,83.9,81.5,7.2,Two-wheeler,59.6
+U0034,43,Freelancer,Semi-Urban,Carpool,4,23.1,92.5,76.6,45.1,Shared,59.19
+U0035,24,Remote Worker,Urban,Cycling,6,0.5,3.0,216.0,0.1,None,35.24
+U0036,38,Remote Worker,Urban,Carpool,4,16.1,64.3,157.3,1.6,Shared,52.39
+U0037,35,Shop Owner,Metro,Carpool,4,19.4,77.6,11.6,44.1,Shared,43.34
+U0038,26,Shop Owner,Urban,Bus,5,18.9,94.3,232.2,0.2,Shared,74.23
+U0039,40,Shop Owner,Urban,Cycling,3,0.5,1.5,70.2,0.0,None,11.44
+U0040,47,Homemaker,Urban,Cycling,5,0.5,2.5,106.8,5.6,None,18.48
+U0041,36,Remote Worker,Rural,Walking,4,9.9,39.4,11.5,2.3,None,2.3
+U0042,39,Student,Rural,Electric Train,4,21.3,85.0,250.4,0.4,Shared,74.97
+U0043,35,Homemaker,Semi-Urban,Motorcycle,5,17.2,86.0,96.0,3.7,Two-wheeler,63.57
+U0044,38,Business Traveler,Semi-Urban,Carpool,3,14.4,43.2,321.0,43.4,Shared,107.98
+U0045,31,Office Worker,Urban,Bus,5,13.1,65.4,205.5,5.1,Shared,78.59
+U0046,18,Remote Worker,Semi-Urban,Bus,6,11.0,66.0,26.6,7.2,Shared,33.59
+U0047,28,Office Worker,Metro,Metro/Subway,6,0.5,3.0,19.9,1.4,Shared,5.87
+U0048,18,Office Worker,Urban,Metro/Subway,4,14.8,59.1,75.6,2.5,Shared,23.31
+U0049,18,Office Worker,Metro,Metro/Subway,5,4.4,21.8,56.5,2.3,Shared,13.53
+U0050,19,Office Worker,Metro,Metro/Subway,4,6.6,26.6,12.0,2.6,Shared,7.18
+U0051,39,Business Traveler,Urban,Car - solo,4,16.7,66.7,456.1,3.5,Car,130.46
+U0052,39,Freelancer,Urban,Car - solo,6,16.5,99.0,182.6,11.4,Car,114.29
+U0053,34,Freelancer,Urban,Car - solo,4,9.5,37.9,47.2,33.2,Car,45.54
+U0054,30,Shop Owner,Semi-Urban,Carpool,5,12.8,64.2,383.8,2.0,Shared,89.35
+U0055,36,Office Worker,Urban,Carpool,3,21.4,64.1,46.9,5.0,Shared,35.0
+U0056,36,Homemaker,Metro,Bus,5,9.7,48.5,79.5,12.3,Shared,34.02
+U0057,21,Student,Semi-Urban,Electric Train,6,19.7,118.3,246.9,1.2,Shared,55.85
+U0058,22,Office Worker,Metro,Bus,5,0.5,2.5,96.8,0.1,Shared,16.75
+U0059,18,Student,Rural,Metro/Subway,3,14.6,43.7,283.0,2.3,Shared,54.33
+U0060,50,Homemaker,Semi-Urban,Cycling,5,0.5,2.5,114.0,10.8,None,31.15
+U0061,29,Office Worker,Metro,Metro/Subway,5,16.2,81.0,149.7,9.5,Shared,40.63
+U0062,31,Freelancer,Urban,Bus,7,8.6,60.0,225.7,16.0,Shared,62.97
+U0063,32,Homemaker,Urban,Motorcycle,4,21.8,87.2,58.5,0.8,Two-wheeler,48.57
+U0064,35,Remote Worker,Semi-Urban,Carpool,6,14.9,89.6,76.7,2.4,Shared,49.84
+U0065,31,Shop Owner,Semi-Urban,Motorcycle,5,29.3,146.3,39.3,16.2,Two-wheeler,74.77
+U0066,18,Freelancer,Rural,Car - solo,5,33.9,169.3,82.9,40.3,Car,162.02
+U0067,42,Shop Owner,Rural,Bus,5,3.2,15.8,14.6,19.9,Shared,12.29
+U0068,51,Student,Rural,Bus,4,16.6,66.3,6.4,1.3,Shared,26.82
+U0069,47,Office Worker,Urban,Carpool,4,21.8,87.1,320.2,3.8,Shared,88.74
+U0070,21,Student,Metro,Metro/Subway,4,9.1,36.2,277.4,0.0,Shared,51.65
+U0071,21,Retired,Metro,Electric Train,7,10.4,72.5,105.6,15.1,Shared,29.52
+U0072,30,Student,Urban,Metro/Subway,5,0.5,2.5,1.7,0.4,Shared,0.96
+U0073,28,Homemaker,Urban,Car - solo,3,28.5,85.5,247.5,3.8,Car,112.17
+U0074,55,Shop Owner,Metro,Metro/Subway,4,12.9,51.7,18.5,0.8,Shared,14.05
+U0075,49,Business Traveler,Urban,Metro/Subway,4,4.4,17.5,91.6,9.6,Shared,19.88
+U0076,50,Office Worker,Urban,Car - solo,3,28.5,85.6,1.7,44.5,Car,80.13
+U0077,49,Student,Semi-Urban,Metro/Subway,4,10.9,43.6,68.4,3.1,Shared,19.48
+U0078,30,Student,Semi-Urban,Electric Train,2,10.6,21.2,7.5,4.7,Shared,4.88
+U0079,37,Student,Metro,Electric Train,4,15.9,63.6,423.1,16.9,Shared,80.47
+U0080,42,Freelancer,Metro,Metro/Subway,4,11.2,44.8,12.0,1.0,Shared,11.19
+U0081,37,Office Worker,Urban,Carpool,5,19.1,95.5,34.6,4.6,Shared,45.81
+U0082,38,Student,Urban,Metro/Subway,5,5.8,28.9,100.1,2.0,Shared,31.05
+U0083,61,Business Traveler,Semi-Urban,Car - solo,2,24.9,49.7,124.8,30.9,Car,79.12
+U0084,39,Business Traveler,Semi-Urban,Metro/Subway,4,13.8,55.2,308.8,0.0,Shared,88.55
+U0085,19,Office Worker,Urban,Walking,6,10.8,64.6,95.3,1.2,None,15.76
+U0086,19,Remote Worker,Metro,Carpool,6,16.9,101.3,62.2,23.5,Shared,56.3
+U0087,18,Remote Worker,Rural,Walking,5,4.5,22.5,274.2,8.8,None,46.38
+U0088,67,Shop Owner,Urban,Metro/Subway,4,0.5,2.0,5.3,0.7,Shared,1.36
+U0089,18,Office Worker,Metro,Car - solo,3,23.9,71.7,81.9,9.4,Car,74.78
+U0090,43,Student,Rural,Metro/Subway,5,6.2,30.9,55.2,0.5,Shared,14.58
+U0091,46,Student,Rural,Bus,3,12.1,36.2,67.4,0.7,Shared,25.05
+U0092,27,Remote Worker,Metro,Walking,5,5.7,28.6,146.0,1.8,None,24.15
+U0093,36,Shop Owner,Urban,Metro/Subway,5,0.5,2.5,33.9,9.9,Shared,11.0
+U0094,33,Remote Worker,Metro,Bus,5,14.9,74.6,171.6,5.3,Shared,73.52
+U0095,29,Student,Rural,Metro/Subway,4,5.9,23.5,169.7,10.3,Shared,33.8
+U0096,31,Office Worker,Urban,Car - solo,5,21.9,109.4,581.2,1.7,Car,239.45
+U0097,44,Remote Worker,Rural,Carpool,3,15.3,46.0,127.2,18.5,Shared,43.19
+U0098,25,Remote Worker,Urban,Carpool,5,14.6,73.2,152.1,0.4,Shared,54.99
+U0099,39,Office Worker,Urban,Car - solo,6,9.3,55.9,1.0,23.8,Car,51.27
+U0100,43,Office Worker,Metro,Metro/Subway,6,13.9,83.4,93.3,4.5,Shared,30.87
+U0101,39,Retired,Urban,Bus,4,10.4,41.8,80.4,12.3,Shared,38.96
+U0102,38,Office Worker,Semi-Urban,Bus,5,13.9,69.3,334.4,0.0,Shared,81.21
+U0103,34,Business Traveler,Urban,Car - solo,7,13.6,94.9,317.2,4.7,Car,160.67
+U0104,26,Office Worker,Urban,Carpool,2,24.1,48.3,23.4,22.7,Shared,28.04
+U0105,30,Freelancer,Metro,Bus,3,13.1,39.4,457.0,1.2,Shared,89.93
+U0106,29,Office Worker,Metro,Metro/Subway,4,20.8,83.1,193.3,0.5,Shared,46.37
+U0107,31,Remote Worker,Semi-Urban,Carpool,4,20.4,81.4,200.2,6.2,Shared,85.75
+U0108,45,Student,Rural,Metro/Subway,4,12.4,49.6,588.0,0.1,Shared,104.68
+U0109,19,Student,Rural,Bus,3,9.9,29.6,573.8,6.2,Shared,158.9
+U0110,48,Retired,Semi-Urban,Car - solo,2,24.5,49.1,92.1,20.4,Car,59.74
+U0111,33,Office Worker,Urban,Car - solo,6,17.4,104.2,456.8,34.6,Car,167.74
+U0112,47,Office Worker,Urban,Motorcycle,6,20.4,122.5,44.7,0.5,Two-wheeler,66.09
+U0113,18,Office Worker,Semi-Urban,Bus,4,14.6,58.5,292.4,1.7,Shared,70.53
+U0114,18,Remote Worker,Urban,Carpool,3,16.4,49.1,135.1,4.3,Shared,43.03
+U0115,51,Shop Owner,Metro,Electric Train,6,12.3,73.7,159.8,12.5,Shared,38.04
+U0116,39,Office Worker,Metro,Metro/Subway,5,9.2,46.1,25.9,1.2,Shared,12.63
+U0117,32,Student,Rural,Bus,4,16.0,64.0,555.2,0.0,Shared,166.23
+U0118,29,Office Worker,Semi-Urban,Cycling,5,0.5,2.5,275.8,5.5,None,71.4
+U0119,40,Shop Owner,Urban,Carpool,5,24.3,121.5,282.8,16.1,Shared,99.19
+U0120,44,Remote Worker,Metro,Bus,4,12.0,47.9,144.2,6.7,Shared,43.24
+U0121,35,Office Worker,Semi-Urban,Bus,5,13.8,69.1,324.9,1.2,Shared,79.8
+U0122,39,Shop Owner,Urban,Car - solo,4,10.1,40.2,416.4,9.3,Car,103.13
+U0123,53,Homemaker,Urban,Carpool,3,8.1,24.4,265.2,21.7,Shared,81.82
+U0124,68,Shop Owner,Rural,Car - solo,5,19.7,98.4,116.1,40.9,Car,108.6
+U0125,30,Student,Urban,Cycling,2,0.5,1.0,125.4,4.0,None,21.21
+U0126,46,Freelancer,Metro,Metro/Subway,3,13.3,39.9,476.8,3.4,Shared,129.31
+U0127,33,Freelancer,Semi-Urban,Motorcycle,5,15.4,77.1,118.3,13.8,Two-wheeler,56.32
+U0128,36,Remote Worker,Urban,Carpool,4,22.5,90.0,211.8,25.9,Shared,76.54
+U0129,23,Remote Worker,Metro,Bus,7,2.6,18.0,174.3,0.6,Shared,35.47
+U0130,22,Remote Worker,Urban,Bus,4,1.8,7.1,94.4,0.3,Shared,18.2
+U0131,59,Freelancer,Semi-Urban,Motorcycle,5,14.8,74.0,7.6,0.1,Two-wheeler,34.26
+U0132,37,Office Worker,Metro,Electric Train,5,5.4,26.9,132.4,4.7,Shared,25.97
+U0133,18,Office Worker,Semi-Urban,Cycling,5,15.7,78.4,77.5,3.3,None,13.27
+U0134,60,Shop Owner,Metro,Bus,4,4.6,18.3,41.6,8.6,Shared,15.49
+U0135,44,Office Worker,Metro,Cycling,5,8.7,43.4,112.6,0.1,None,18.39
+U0136,55,Business Traveler,Semi-Urban,Motorcycle,4,10.0,40.1,78.2,2.1,Two-wheeler,31.01
+U0137,47,Homemaker,Urban,Cycling,4,6.8,27.1,62.3,12.5,None,18.29
+U0138,43,Office Worker,Metro,Electric Train,5,4.6,23.0,107.2,9.8,Shared,32.21
+U0139,41,Homemaker,Urban,Carpool,4,21.2,84.7,111.3,1.1,Shared,53.19
+U0140,36,Student,Rural,Metro/Subway,4,10.4,41.5,2.6,0.2,Shared,7.84
+U0141,28,Remote Worker,Semi-Urban,Walking,6,0.6,3.7,64.5,5.5,None,11.58
+U0142,25,Retired,Semi-Urban,Motorcycle,5,2.7,13.4,247.2,14.0,Two-wheeler,48.95
+U0143,36,Office Worker,Urban,Motorcycle,5,17.8,89.1,85.7,0.0,Two-wheeler,61.6
+U0144,20,Student,Urban,Metro/Subway,3,17.2,51.5,87.3,2.5,Shared,23.85
+U0145,26,Shop Owner,Urban,Car - solo,3,19.7,59.1,128.9,23.2,Car,74.62
+U0146,49,Shop Owner,Urban,Bus,4,9.5,37.9,244.6,4.8,Shared,55.4
+U0147,18,Remote Worker,Metro,Carpool,5,30.1,150.4,120.0,1.3,Shared,92.73
+U0148,22,Student,Metro,Metro/Subway,5,17.2,86.0,46.5,0.5,Shared,22.95
+U0149,41,Remote Worker,Semi-Urban,Bus,4,2.5,9.9,57.4,4.1,Shared,13.96
+U0150,47,Remote Worker,Metro,Carpool,7,21.2,148.6,275.7,6.2,Shared,132.63
+U0151,18,Office Worker,Urban,Carpool,2,16.7,33.3,76.0,15.6,Shared,29.1
+U0152,51,Business Traveler,Semi-Urban,Carpool,4,20.9,83.8,486.7,16.0,Shared,116.87
+U0153,29,Remote Worker,Rural,Carpool,4,14.8,59.3,184.2,27.6,Shared,76.67
+U0154,18,Remote Worker,Urban,Bus,5,14.5,72.6,152.7,7.4,Shared,54.28
+U0155,28,Student,Metro,Bus,2,11.6,23.1,12.9,4.1,Shared,11.8
+U0156,26,Business Traveler,Urban,Car - solo,3,22.3,67.0,252.4,6.9,Car,98.16
+U0157,23,Shop Owner,Rural,Motorcycle,6,8.8,53.1,318.4,0.2,Two-wheeler,75.6
+U0158,47,Remote Worker,Metro,Bus,7,19.8,138.5,251.6,0.9,Shared,94.56
+U0159,43,Student,Metro,Bus,3,10.5,31.6,371.8,0.3,Shared,72.84
+U0160,47,Student,Metro,Electric Train,4,11.1,44.6,182.7,4.4,Shared,36.41
+U0161,44,Freelancer,Semi-Urban,Motorcycle,2,15.1,30.1,22.4,0.0,Two-wheeler,19.15
+U0162,34,Office Worker,Urban,Car - solo,4,24.2,96.8,83.7,3.1,Car,102.41
+U0163,30,Freelancer,Urban,Car - solo,7,23.4,163.8,217.4,14.1,Car,174.33
+U0164,40,Shop Owner,Semi-Urban,Car - solo,4,20.1,80.5,81.2,4.8,Car,88.56
+U0165,30,Freelancer,Semi-Urban,Car - solo,4,18.6,74.4,21.9,6.4,Car,68.7
+U0166,31,Student,Semi-Urban,Electric Train,4,9.3,37.4,50.1,6.5,Shared,14.26
+U0167,18,Remote Worker,Metro,Carpool,7,8.3,58.2,295.9,2.5,Shared,72.63
+U0168,42,Office Worker,Semi-Urban,Car - solo,7,20.6,144.0,202.2,18.5,Car,156.23
+U0169,18,Student,Urban,Electric Train,3,12.6,37.9,241.2,1.8,Shared,44.58
+U0170,28,Student,Urban,Walking,5,0.5,2.5,186.9,0.4,None,47.73
+U0171,27,Freelancer,Metro,Electric Train,5,15.3,76.5,95.5,4.8,Shared,26.43
+U0172,43,Business Traveler,Rural,Car - solo,3,20.2,60.5,670.0,24.0,Car,164.14
+U0173,47,Homemaker,Urban,Motorcycle,3,23.0,69.0,63.2,0.9,Two-wheeler,41.25
+U0174,34,Office Worker,Metro,Metro/Subway,5,22.4,111.9,24.5,13.6,Shared,26.48
+U0175,30,Retired,Urban,Metro/Subway,4,2.9,11.5,78.0,3.3,Shared,22.56
+U0176,33,Homemaker,Metro,Carpool,5,19.0,95.1,331.6,5.7,Shared,94.23
+U0177,40,Business Traveler,Urban,Motorcycle,2,12.0,24.0,230.9,10.0,Two-wheeler,50.27
+U0178,48,Student,Urban,Bus,3,0.9,2.7,314.0,2.3,Shared,52.66
+U0179,44,Student,Semi-Urban,Walking,2,5.7,11.4,77.7,10.6,None,14.69
+U0180,30,Shop Owner,Urban,Bus,4,16.2,64.7,15.4,12.8,Shared,31.29
+U0181,33,Remote Worker,Metro,Bus,5,9.2,46.0,28.7,12.3,Shared,24.77
+U0182,36,Retired,Metro,Car - solo,3,16.7,50.0,158.6,5.2,Car,83.01
+U0183,31,Shop Owner,Semi-Urban,Bus,6,14.0,83.7,66.5,5.8,Shared,44.22
+U0184,18,Office Worker,Metro,Bus,4,3.7,14.7,24.5,0.1,Shared,11.93
+U0185,29,Remote Worker,Urban,Carpool,4,18.5,74.0,60.1,29.0,Shared,45.8
+U0186,20,Student,Semi-Urban,Walking,4,5.6,22.4,193.5,13.4,None,34.1
+U0187,47,Freelancer,Urban,Carpool,4,17.2,68.7,250.9,15.0,Shared,72.03
+U0188,31,Shop Owner,Metro,Electric Train,5,23.0,115.1,85.6,3.8,Shared,29.64
+U0189,22,Remote Worker,Metro,Bus,3,8.7,26.0,1.8,4.0,Shared,11.1
+U0190,42,Freelancer,Metro,Bus,4,0.5,2.0,117.4,4.1,Shared,20.69
+U0191,51,Freelancer,Rural,Carpool,4,15.6,62.4,46.8,8.2,Shared,34.88
+U0192,24,Homemaker,Semi-Urban,Bus,6,10.9,65.2,49.3,0.2,Shared,33.21
+U0193,47,Office Worker,Metro,Metro/Subway,4,8.7,34.6,47.0,5.0,Shared,14.76
+U0194,38,Remote Worker,Metro,Bus,5,12.3,61.4,192.6,3.0,Shared,55.64
+U0195,60,Freelancer,Metro,Metro/Subway,4,11.0,43.8,26.3,6.4,Shared,15.71
+U0196,28,Shop Owner,Urban,Car - solo,6,16.4,98.4,360.4,25.9,Car,178.71
+U0197,50,Homemaker,Urban,Car - solo,2,27.5,55.0,217.7,7.0,Car,82.58
+U0198,27,Freelancer,Metro,Metro/Subway,5,10.3,51.5,87.0,1.8,Shared,31.67
+U0199,51,Remote Worker,Urban,Walking,4,1.2,4.6,102.4,0.0,None,16.7
+U0200,28,Student,Metro,Metro/Subway,5,9.4,47.2,131.7,3.9,Shared,42.72
+U0201,18,Office Worker,Rural,Motorcycle,3,10.8,32.5,120.8,3.1,Two-wheeler,45.89
+U0202,22,Freelancer,Urban,Bus,4,2.4,9.7,34.2,3.3,Shared,9.95
+U0203,28,Student,Urban,Metro/Subway,6,16.6,99.6,512.0,0.6,Shared,101.26
+U0204,33,Freelancer,Urban,Carpool,5,15.8,79.1,138.5,4.8,Shared,68.81
+U0205,46,Homemaker,Metro,Bus,4,11.5,46.1,270.1,1.0,Shared,86.83
+U0206,60,Office Worker,Urban,Metro/Subway,4,9.7,38.7,139.3,7.5,Shared,43.82
+U0207,28,Office Worker,Metro,Carpool,6,17.2,103.1,261.2,14.8,Shared,111.87
+U0208,43,Student,Urban,Bus,5,7.5,37.7,40.9,9.0,Shared,22.92
+U0209,36,Retired,Metro,Metro/Subway,5,14.4,71.8,173.0,0.3,Shared,56.91
+U0210,34,Remote Worker,Semi-Urban,Walking,6,0.5,3.0,101.3,9.2,None,18.28
+U0211,36,Retired,Urban,Carpool,3,22.0,65.9,247.8,1.1,Shared,67.71
+U0212,40,Office Worker,Metro,Walking,4,9.0,35.9,83.8,2.4,None,14.12
+U0213,56,Retired,Urban,Bus,2,10.0,20.1,261.3,3.6,Shared,51.03
+U0214,51,Shop Owner,Metro,Carpool,5,24.4,121.8,817.3,22.4,Shared,187.62
+U0215,34,Freelancer,Metro,Metro/Subway,3,5.1,15.2,286.2,0.9,Shared,49.53
+U0216,51,Business Traveler,Metro,Car - solo,3,16.4,49.1,190.5,27.7,Car,77.19
+U0217,51,Business Traveler,Rural,Carpool,4,17.6,70.4,886.6,15.0,Shared,257.94
+U0218,41,Student,Metro,Electric Train,5,3.7,18.3,272.7,8.1,Shared,48.39
+U0219,18,Office Worker,Rural,Motorcycle,5,14.7,73.5,18.6,0.1,Two-wheeler,35.81
+U0220,48,Business Traveler,Semi-Urban,Carpool,3,16.4,49.1,397.0,14.0,Shared,87.6
+U0221,21,Student,Semi-Urban,Metro/Subway,5,19.3,96.4,40.0,14.3,Shared,26.4
+U0222,18,Student,Metro,Bus,4,8.6,34.5,27.8,1.8,Shared,18.17
+U0223,31,Student,Urban,Bus,4,16.3,65.3,42.3,2.8,Shared,32.6
+U0224,28,Student,Semi-Urban,Cycling,4,4.6,18.4,390.8,1.1,None,99.85
+U0225,43,Business Traveler,Metro,Motorcycle,5,4.4,21.8,169.4,0.1,Two-wheeler,37.34
+U0226,23,Freelancer,Semi-Urban,Cycling,4,4.1,16.5,132.0,0.1,None,21.53
+U0227,45,Office Worker,Metro,Bus,5,12.0,59.8,67.9,1.7,Shared,34.42
+U0228,28,Office Worker,Rural,Cycling,2,2.1,4.2,121.9,0.0,None,19.87
+U0229,18,Student,Rural,Metro/Subway,4,6.8,27.3,131.2,9.1,Shared,27.97
+U0230,28,Freelancer,Metro,Metro/Subway,3,7.4,22.3,184.6,0.5,Shared,51.12
+U0231,24,Shop Owner,Rural,Motorcycle,5,13.7,68.5,122.6,8.5,Two-wheeler,63.43
+U0232,41,Retired,Urban,Motorcycle,2,22.3,44.6,16.1,0.4,Two-wheeler,24.09
+U0233,18,Freelancer,Metro,Electric Train,5,12.8,64.1,205.9,2.4,Shared,42.35
+U0234,18,Office Worker,Urban,Motorcycle,3,6.8,20.4,262.0,0.8,Two-wheeler,51.97
+U0235,31,Remote Worker,Metro,Cycling,3,5.3,15.9,84.2,23.2,None,18.19
+U0236,22,Remote Worker,Urban,Cycling,6,2.9,17.2,244.7,2.4,None,40.34
+U0237,40,Remote Worker,Metro,Walking,4,4.1,16.3,205.1,9.3,None,35.22
+U0238,31,Shop Owner,Semi-Urban,Bus,5,0.5,2.5,144.0,0.0,Shared,37.68
+U0239,23,Student,Urban,Electric Train,4,5.6,22.4,26.5,6.4,Shared,8.46
+U0240,28,Remote Worker,Semi-Urban,Cycling,6,11.2,67.0,28.4,0.5,None,7.33
+U0241,35,Business Traveler,Rural,Bus,6,6.4,38.5,366.9,5.9,Shared,109.52
+U0242,18,Remote Worker,Rural,Carpool,5,15.7,78.5,134.5,10.7,Shared,56.26
+U0243,53,Homemaker,Semi-Urban,Carpool,6,19.4,116.3,170.1,29.7,Shared,81.26
+U0244,27,Business Traveler,Metro,Motorcycle,3,20.6,61.9,498.2,3.3,Two-wheeler,109.45
+U0245,38,Office Worker,Metro,Electric Train,6,9.6,57.8,163.5,5.8,Shared,35.28
+U0246,62,Retired,Metro,Carpool,4,21.0,83.8,55.6,7.6,Shared,44.99
+U0247,29,Homemaker,Metro,Carpool,3,24.4,73.1,189.3,14.7,Shared,63.74
+U0248,42,Business Traveler,Rural,Car - solo,4,11.8,47.3,121.4,6.1,Car,71.44
+U0249,23,Freelancer,Metro,Electric Train,6,3.3,19.8,312.2,1.6,Shared,53.75
+U0250,38,Shop Owner,Urban,Motorcycle,3,16.2,48.7,55.5,2.0,Two-wheeler,31.14
+U0251,47,Freelancer,Metro,Car - solo,4,6.9,27.7,30.9,4.6,Car,28.94
+U0252,41,Freelancer,Metro,Cycling,3,0.5,1.5,125.0,0.2,None,20.41
+U0253,39,Remote Worker,Metro,Carpool,3,8.6,25.7,245.5,13.7,Shared,75.79
+U0254,48,Homemaker,Metro,Metro/Subway,5,20.0,99.9,207.8,3.6,Shared,52.3
+U0255,37,Retired,Urban,Motorcycle,4,17.9,71.4,85.7,7.0,Two-wheeler,47.17
+U0256,50,Office Worker,Urban,Motorcycle,6,22.8,137.1,28.8,0.5,Two-wheeler,68.57
+U0257,23,Student,Metro,Cycling,2,3.6,7.2,42.8,3.9,None,7.73
+U0258,47,Retired,Semi-Urban,Walking,4,0.5,2.0,128.9,6.8,None,22.31
+U0259,32,Student,Urban,Metro/Subway,4,5.3,21.1,13.4,5.0,Shared,6.9
+U0260,24,Remote Worker,Metro,Bus,7,13.2,92.6,126.0,9.9,Shared,58.13
+U0261,23,Student,Urban,Metro/Subway,4,7.0,28.2,363.0,0.8,Shared,64.33
+U0262,39,Student,Metro,Bus,4,5.8,23.3,145.4,1.1,Shared,32.91
+U0263,42,Remote Worker,Urban,Carpool,4,21.3,85.2,78.0,5.9,Shared,48.9
+U0264,42,Freelancer,Rural,Motorcycle,2,20.2,40.4,72.8,10.6,Two-wheeler,38.61
+U0265,36,Freelancer,Urban,Bus,3,3.8,11.3,211.2,6.2,Shared,39.97
+U0266,27,Student,Metro,Metro/Subway,4,8.7,34.8,73.2,4.0,Shared,18.87
+U0267,42,Office Worker,Metro,Electric Train,7,18.1,126.4,34.0,1.8,Shared,22.31
+U0268,36,Remote Worker,Metro,Bus,4,5.3,21.1,160.3,1.7,Shared,34.57
+U0269,22,Freelancer,Urban,Bus,7,3.3,23.3,368.3,0.0,Shared,69.01
+U0270,52,Business Traveler,Semi-Urban,Motorcycle,2,16.9,33.8,275.4,11.6,Two-wheeler,62.18
+U0271,46,Student,Urban,Bus,3,10.3,31.0,230.5,0.1,Shared,49.55
+U0272,18,Office Worker,Semi-Urban,Carpool,3,13.9,41.6,17.4,6.9,Shared,21.28
+U0273,25,Shop Owner,Semi-Urban,Motorcycle,4,30.7,122.6,137.0,7.6,Two-wheeler,91.08
+U0274,58,Shop Owner,Semi-Urban,Motorcycle,5,12.8,64.2,352.7,0.5,Two-wheeler,118.67
+U0275,49,Homemaker,Semi-Urban,Motorcycle,5,19.9,99.3,482.3,2.3,Two-wheeler,123.36
+U0276,43,Office Worker,Urban,Car - solo,4,9.6,38.3,105.8,1.2,Car,59.01
+U0277,40,Office Worker,Semi-Urban,Motorcycle,4,23.1,92.5,23.5,4.4,Two-wheeler,45.94
+U0278,40,Office Worker,Semi-Urban,Car - solo,3,21.7,65.1,269.8,21.5,Car,102.23
+U0279,36,Student,Semi-Urban,Metro/Subway,3,9.6,28.8,71.1,0.0,Shared,16.71
+U0280,47,Homemaker,Rural,Motorcycle,5,19.9,99.5,165.7,0.2,Two-wheeler,71.41
+U0281,25,Shop Owner,Semi-Urban,Bus,4,7.0,27.9,307.3,1.2,Shared,61.07
+U0282,24,Student,Semi-Urban,Metro/Subway,4,16.5,66.2,529.7,3.6,Shared,147.51
+U0283,53,Shop Owner,Urban,Motorcycle,3,14.7,44.0,204.1,1.3,Two-wheeler,53.16
+U0284,43,Retired,Rural,Bus,4,15.3,61.2,50.9,5.1,Shared,32.88
+U0285,43,Homemaker,Metro,Bus,6,16.5,98.8,15.5,4.4,Shared,41.45
+U0286,51,Shop Owner,Urban,Motorcycle,4,20.1,80.2,392.2,8.9,Two-wheeler,101.41
+U0287,40,Freelancer,Urban,Bus,3,13.2,39.7,121.8,0.0,Shared,35.16
+U0288,39,Remote Worker,Rural,Carpool,3,21.7,65.2,191.4,24.3,Shared,80.3
+U0289,22,Student,Rural,Metro/Subway,3,12.7,38.2,56.3,9.6,Shared,22.97
+U0290,28,Student,Urban,Walking,3,0.5,1.5,5.7,0.4,None,1.54
+U0291,39,Shop Owner,Rural,Motorcycle,6,14.1,84.6,19.2,0.3,Two-wheeler,40.91
+U0292,30,Shop Owner,Metro,Metro/Subway,4,12.0,48.0,236.8,0.1,Shared,47.13
+U0293,26,Remote Worker,Semi-Urban,Walking,5,20.2,100.8,148.2,2.2,None,38.21
+U0294,19,Student,Urban,Metro/Subway,4,19.8,79.4,288.1,1.2,Shared,87.78
+U0295,49,Retired,Rural,Motorcycle,3,9.6,28.7,98.3,10.6,Two-wheeler,39.9
+U0296,49,Freelancer,Urban,Car - solo,4,20.1,80.3,136.1,10.1,Car,90.86
+U0297,18,Office Worker,Urban,Car - solo,3,20.4,61.2,16.2,3.7,Car,54.25
+U0298,45,Business Traveler,Metro,Motorcycle,5,20.7,103.4,256.2,3.2,Two-wheeler,112.05
+U0299,20,Student,Semi-Urban,Cycling,4,2.2,8.6,35.6,12.7,None,8.25
+U0300,32,Shop Owner,Metro,Electric Train,4,8.4,33.7,226.8,1.0,Shared,41.55
+U0301,41,Homemaker,Urban,Carpool,4,20.7,83.0,55.6,2.8,Shared,43.74
+U0302,46,Office Worker,Urban,Carpool,5,19.3,96.5,171.7,0.5,Shared,67.78
+U0303,68,Freelancer,Semi-Urban,Car - solo,4,15.5,61.8,52.4,4.9,Car,60.89
+U0304,34,Office Worker,Semi-Urban,Carpool,4,20.2,80.6,41.8,12.5,Shared,46.23
+U0305,39,Office Worker,Metro,Metro/Subway,5,17.8,88.9,42.6,0.0,Shared,26.64
+U0306,50,Homemaker,Metro,Bus,3,16.9,50.6,145.6,1.0,Shared,43.43
+U0307,47,Shop Owner,Semi-Urban,Motorcycle,4,16.6,66.5,7.3,10.4,Two-wheeler,32.85
+U0308,26,Office Worker,Rural,Car - solo,3,19.8,59.4,98.0,4.2,Car,66.14
+U0309,36,Remote Worker,Semi-Urban,Carpool,6,19.0,114.0,180.9,0.1,Shared,76.4
+U0310,38,Remote Worker,Urban,Bus,4,13.6,54.3,23.0,0.5,Shared,24.75
+U0311,52,Business Traveler,Metro,Motorcycle,2,19.6,39.2,72.5,0.2,Two-wheeler,36.03
+U0312,30,Office Worker,Semi-Urban,Motorcycle,7,22.9,160.0,81.6,0.0,Two-wheeler,92.18
+U0313,40,Student,Urban,Metro/Subway,5,13.6,68.1,112.3,0.2,Shared,30.42
+U0314,28,Office Worker,Rural,Walking,4,6.7,26.8,62.9,5.5,None,11.32
+U0315,29,Remote Worker,Metro,Bus,6,7.2,43.0,93.9,1.5,Shared,32.17
+U0316,45,Office Worker,Metro,Electric Train,6,9.6,57.7,53.5,9.9,Shared,18.1
+U0317,18,Office Worker,Rural,Car - solo,5,20.7,103.5,56.8,7.9,Car,96.8
+U0318,31,Remote Worker,Rural,Bus,4,11.0,44.1,29.3,20.7,Shared,25.73
+U0319,28,Office Worker,Urban,Car - solo,5,20.6,102.8,8.9,1.7,Car,87.26
+U0320,46,Freelancer,Semi-Urban,Motorcycle,4,13.9,55.7,67.3,0.0,Two-wheeler,35.82
+U0321,38,Homemaker,Urban,Bus,7,10.1,70.8,131.2,1.8,Shared,49.01
+U0322,49,Shop Owner,Urban,Motorcycle,4,19.6,78.6,121.9,2.0,Two-wheeler,66.51
+U0323,44,Office Worker,Semi-Urban,Carpool,2,18.9,37.7,4.4,4.8,Shared,17.15
+U0324,50,Retired,Rural,Motorcycle,2,25.7,51.4,269.2,1.7,Two-wheeler,67.11
+U0325,48,Retired,Metro,Bus,5,16.5,82.6,161.8,1.1,Shared,58.44
+U0326,18,Student,Metro,Metro/Subway,4,11.5,46.0,83.8,0.0,Shared,21.83
+U0327,22,Student,Metro,Walking,3,1.0,2.9,50.8,3.5,None,8.94
+U0328,29,Remote Worker,Metro,Carpool,4,17.8,71.1,376.3,4.8,Shared,126.14
+U0329,40,Office Worker,Rural,Car - solo,2,25.3,50.5,76.7,3.8,Car,55.24
+U0330,40,Business Traveler,Rural,Car - solo,3,22.1,66.2,190.9,10.2,Car,88.1
+U0331,18,Office Worker,Urban,Carpool,5,21.7,108.3,205.9,2.4,Shared,78.57
+U0332,26,Office Worker,Urban,Bus,5,19.4,97.0,34.5,4.5,Shared,47.06
+U0333,36,Homemaker,Metro,Metro/Subway,3,15.9,47.6,172.9,9.9,Shared,38.53
+U0334,28,Shop Owner,Urban,Bus,6,13.6,81.8,285.0,12.4,Shared,80.35
+U0335,18,Remote Worker,Urban,Bus,4,7.8,31.1,160.9,5.5,Shared,39.25
+U0336,31,Business Traveler,Metro,Motorcycle,4,21.5,86.1,248.5,0.3,Two-wheeler,101.8
+U0337,51,Business Traveler,Urban,Metro/Subway,7,14.4,100.9,811.5,0.9,Shared,150.37
+U0338,57,Shop Owner,Metro,Metro/Subway,5,16.4,82.2,144.8,6.6,Shared,39.45
+U0339,38,Homemaker,Urban,Bus,4,3.6,14.3,497.0,0.4,Shared,132.33
+U0340,44,Retired,Metro,Bus,5,5.4,26.8,104.1,3.8,Shared,37.6
+U0341,20,Freelancer,Metro,Bus,6,13.6,81.7,141.0,5.2,Shared,68.44
+U0342,21,Office Worker,Metro,Car - solo,4,25.3,101.1,443.1,19.6,Car,160.04
+U0343,21,Remote Worker,Urban,Walking,4,0.5,2.0,139.5,6.4,None,23.97
+U0344,18,Student,Semi-Urban,Walking,3,11.0,33.1,119.7,3.4,None,20.16
+U0345,18,Remote Worker,Urban,Cycling,6,2.3,13.8,49.0,0.4,None,8.08
+U0346,24,Remote Worker,Rural,Cycling,6,14.1,84.4,30.1,4.4,None,5.74
+U0347,47,Shop Owner,Semi-Urban,Carpool,5,22.5,112.4,361.9,0.4,Shared,105.28
+U0348,27,Freelancer,Urban,Bus,5,25.3,126.6,47.5,0.1,Shared,56.57
+U0349,38,Remote Worker,Urban,Carpool,3,18.0,54.0,51.1,4.4,Shared,31.36
+U0350,34,Remote Worker,Rural,Carpool,6,26.4,158.4,14.6,3.2,Shared,69.48
+U0351,26,Remote Worker,Urban,Carpool,4,11.8,47.4,310.8,7.6,Shared,100.19
+U0352,33,Freelancer,Urban,Cycling,3,0.5,1.5,86.6,2.7,None,22.59
+U0353,29,Retired,Urban,Bus,1,8.7,8.7,252.3,4.8,Shared,45.42
+U0354,32,Student,Semi-Urban,Electric Train,4,9.5,38.1,19.5,3.6,Shared,8.81
+U0355,36,Student,Urban,Cycling,3,4.5,13.5,45.0,12.8,None,9.79
+U0356,43,Business Traveler,Urban,Motorcycle,4,8.5,34.2,187.1,0.3,Two-wheeler,45.79
+U0357,36,Student,Rural,Bus,5,9.7,48.6,36.0,10.1,Shared,26.56
+U0358,48,Homemaker,Metro,Metro/Subway,4,12.6,50.5,126.3,9.2,Shared,31.31
+U0359,47,Retired,Metro,Carpool,3,15.6,46.7,522.8,0.8,Shared,104.61
+U0360,32,Homemaker,Urban,Bus,4,9.5,38.1,159.2,1.4,Shared,40.92
+U0361,46,Business Traveler,Urban,Motorcycle,3,28.5,85.4,330.3,0.6,Two-wheeler,92.06
+U0362,37,Office Worker,Metro,Bus,5,19.5,97.7,202.6,0.5,Shared,70.76
+U0363,18,Student,Urban,Metro/Subway,1,8.0,8.0,83.4,0.1,Shared,15.03
+U0364,33,Remote Worker,Rural,Bus,5,2.0,9.9,64.4,10.9,Shared,16.4
+U0365,32,Student,Metro,Walking,2,4.7,9.4,143.9,1.6,None,23.76
+U0366,32,Student,Semi-Urban,Metro/Subway,3,0.5,1.5,68.6,0.4,Shared,17.85
+U0367,30,Remote Worker,Semi-Urban,Cycling,3,0.6,1.8,189.9,2.4,None,31.41
+U0368,42,Office Worker,Urban,Motorcycle,5,18.3,91.5,57.4,8.8,Two-wheeler,57.15
+U0369,18,Freelancer,Urban,Metro/Subway,5,11.7,58.5,122.9,1.9,Shared,30.76
+U0370,26,Freelancer,Rural,Car - solo,3,27.8,83.3,51.6,9.9,Car,79.59
+U0371,18,Office Worker,Urban,Carpool,4,10.6,42.3,557.8,20.3,Shared,112.21
+U0372,48,Office Worker,Semi-Urban,Motorcycle,6,11.5,69.2,346.0,4.0,Two-wheeler,88.04
+U0373,34,Office Worker,Urban,Carpool,2,18.7,37.4,103.8,19.9,Shared,36.14
+U0374,28,Remote Worker,Rural,Walking,3,3.6,10.9,231.3,2.8,None,38.24
+U0375,54,Student,Semi-Urban,Metro/Subway,4,15.4,61.7,74.2,16.8,Shared,26.26
+U0376,45,Office Worker,Metro,Metro/Subway,5,0.5,2.5,9.0,0.1,Shared,1.94
+U0377,51,Freelancer,Metro,Metro/Subway,6,7.6,45.7,274.8,0.0,Shared,78.2
+U0378,37,Freelancer,Urban,Motorcycle,5,19.2,96.0,194.7,0.7,Two-wheeler,74.68
+U0379,26,Office Worker,Metro,Carpool,7,18.0,126.0,218.1,5.6,Shared,88.48
+U0380,22,Office Worker,Rural,Bus,4,12.4,49.5,202.2,0.3,Shared,70.69
+U0381,39,Remote Worker,Metro,Bus,4,0.5,2.0,325.0,1.8,Shared,54.08
+U0382,50,Business Traveler,Rural,Carpool,5,19.6,98.0,258.0,7.1,Shared,83.74
+U0383,35,Student,Urban,Walking,3,0.5,1.5,135.7,11.9,None,36.87
+U0384,33,Student,Semi-Urban,Electric Train,2,17.4,34.8,601.6,0.2,Shared,157.97
+U0385,42,Homemaker,Metro,Cycling,6,0.5,3.0,209.0,1.2,None,34.28
+U0386,48,Shop Owner,Semi-Urban,Motorcycle,5,15.8,79.0,82.9,10.5,Two-wheeler,50.75
+U0387,61,Shop Owner,Urban,Carpool,6,17.1,102.5,175.7,27.4,Shared,92.24
+U0388,51,Shop Owner,Urban,Metro/Subway,4,12.0,48.0,247.0,26.4,Shared,53.84
+U0389,28,Office Worker,Metro,Walking,6,0.5,3.0,26.5,3.1,None,4.91
+U0390,27,Office Worker,Urban,Carpool,6,17.1,102.3,1049.8,60.9,Shared,224.9
+U0391,56,Student,Semi-Urban,Metro/Subway,2,0.5,1.0,48.8,4.6,Shared,9.03
+U0392,37,Office Worker,Semi-Urban,Motorcycle,6,8.0,47.8,103.7,0.6,Two-wheeler,38.33
+U0393,31,Student,Rural,Bus,3,13.1,39.4,144.2,0.2,Shared,38.73
+U0394,32,Office Worker,Urban,Motorcycle,4,15.3,61.1,52.2,5.2,Two-wheeler,41.55
+U0395,54,Homemaker,Metro,Car - solo,5,17.9,89.3,144.3,4.3,Car,98.61
+U0396,41,Retired,Semi-Urban,Car - solo,2,25.8,51.6,197.3,26.4,Car,80.16
+U0397,24,Office Worker,Metro,Metro/Subway,2,12.8,25.7,18.3,2.5,Shared,8.02
+U0398,30,Retired,Metro,Electric Train,2,12.8,25.6,53.8,4.4,Shared,12.94
+U0399,43,Homemaker,Metro,Metro/Subway,6,8.8,52.7,130.6,0.0,Shared,42.66
+U0400,34,Homemaker,Rural,Car - solo,3,9.7,29.0,8.1,2.6,Car,26.68
+U0401,46,Student,Urban,Bus,4,4.0,16.1,158.4,0.1,Shared,32.06
+U0402,26,Student,Metro,Cycling,3,7.3,22.0,89.7,7.5,None,24.31
+U0403,44,Office Worker,Semi-Urban,Car - solo,3,25.1,75.3,167.5,6.1,Car,91.06
+U0404,34,Remote Worker,Urban,Carpool,3,12.2,36.6,73.0,4.1,Shared,27.73
+U0405,20,Remote Worker,Urban,Carpool,6,17.1,102.6,12.0,3.0,Shared,44.73
+U0406,29,Homemaker,Urban,Bus,6,1.6,9.8,185.0,0.1,Shared,33.94
+U0407,30,Student,Rural,Walking,3,6.8,20.5,81.9,6.8,None,22.19
+U0408,25,Remote Worker,Urban,Carpool,4,11.4,45.7,10.9,6.2,Shared,22.75
+U0409,39,Shop Owner,Urban,Bus,2,11.8,23.6,124.9,1.3,Shared,29.71
+U0410,32,Freelancer,Urban,Motorcycle,6,14.8,88.5,274.5,11.2,Two-wheeler,111.64
+U0411,50,Homemaker,Urban,Metro/Subway,5,6.7,33.3,90.1,5.1,Shared,29.88
+U0412,37,Office Worker,Urban,Carpool,4,14.1,56.3,30.8,9.9,Shared,30.08
+U0413,41,Retired,Semi-Urban,Carpool,4,18.4,73.4,250.2,4.4,Shared,71.83
+U0414,41,Student,Metro,Metro/Subway,4,12.8,51.4,42.5,6.5,Shared,21.2
+U0415,24,Remote Worker,Urban,Carpool,5,15.9,79.5,39.4,13.6,Shared,41.75
+U0416,40,Freelancer,Semi-Urban,Car - solo,4,21.2,84.9,159.5,8.4,Car,98.21
+U0417,29,Shop Owner,Urban,Bus,5,9.4,47.2,79.5,11.8,Shared,33.42
+U0418,42,Retired,Semi-Urban,Car - solo,4,15.8,63.2,43.5,12.5,Car,62.01
+U0419,34,Student,Urban,Bus,4,10.5,41.8,118.5,0.5,Shared,35.54
+U0420,18,Remote Worker,Urban,Bus,5,13.3,66.6,54.0,0.1,Shared,39.46
+U0421,18,Freelancer,Metro,Walking,5,4.0,20.1,225.1,6.7,None,37.97
+U0422,31,Office Worker,Rural,Bus,4,4.8,19.3,100.6,2.8,Shared,24.35
+U0423,25,Freelancer,Urban,Bus,5,19.5,97.3,107.2,3.5,Shared,55.64
+U0424,43,Student,Semi-Urban,Cycling,3,0.9,2.7,94.5,3.5,None,16.07
+U0425,22,Office Worker,Metro,Car - solo,4,19.7,78.7,263.8,5.0,Car,109.42
+U0426,22,Freelancer,Urban,Car - solo,6,23.2,139.5,100.6,11.9,Car,134.61
+U0427,38,Office Worker,Semi-Urban,Car - solo,7,26.2,183.5,7.5,17.2,Car,157.8
+U0428,47,Remote Worker,Metro,Bus,5,12.0,59.9,229.0,4.2,Shared,61.2
+U0429,39,Office Worker,Rural,Car - solo,6,21.4,128.6,43.5,3.8,Car,114.73
+U0430,18,Student,Urban,Electric Train,3,7.7,23.0,73.5,7.6,Shared,16.43
+U0431,45,Student,Metro,Bus,3,10.5,31.4,34.5,1.7,Shared,18.06
+U0432,43,Homemaker,Semi-Urban,Carpool,5,17.3,86.6,130.8,18.1,Shared,72.44
+U0433,49,Homemaker,Metro,Metro/Subway,5,1.0,5.0,39.0,6.1,Shared,8.42
+U0434,39,Business Traveler,Urban,Motorcycle,5,13.9,69.7,149.9,1.7,Two-wheeler,55.85
+U0435,40,Shop Owner,Metro,Electric Train,4,7.3,29.1,25.7,0.1,Shared,10.35
+U0436,21,Student,Urban,Bus,6,10.8,64.9,0.0,5.5,Shared,26.07
+U0437,31,Office Worker,Rural,Carpool,1,21.7,21.7,415.4,30.0,Shared,82.39
+U0438,22,Freelancer,Urban,Carpool,4,23.9,95.8,81.6,26.3,Shared,57.73
+U0439,18,Student,Rural,Metro/Subway,4,7.4,29.6,220.3,0.3,Shared,61.48
+U0440,25,Freelancer,Metro,Walking,3,0.5,1.5,97.3,2.2,None,25.24
+U0441,20,Student,Metro,Cycling,5,1.1,5.6,149.5,3.9,None,25.13
+U0442,46,Business Traveler,Metro,Carpool,5,7.8,38.8,1165.1,32.8,Shared,319.34
+U0443,18,Office Worker,Urban,Car - solo,5,8.1,40.6,187.2,7.8,Car,82.98
+U0444,36,Student,Urban,Cycling,1,0.5,0.5,77.8,28.3,None,18.1
+U0445,27,Remote Worker,Rural,Cycling,5,15.1,75.7,58.9,3.0,None,10.18
+U0446,30,Student,Rural,Metro/Subway,5,11.5,57.3,9.8,2.8,Shared,12.31
+U0447,26,Office Worker,Semi-Urban,Carpool,3,26.6,79.8,69.8,23.7,Shared,48.77
+U0448,22,Office Worker,Semi-Urban,Motorcycle,4,19.0,75.9,592.9,28.4,Two-wheeler,190.51
+U0449,33,Student,Urban,Bus,5,5.5,27.3,79.6,1.7,Shared,23.82
+U0450,33,Retired,Rural,Cycling,2,3.6,7.3,169.5,2.9,None,28.17
+U0451,40,Shop Owner,Metro,Electric Train,4,9.4,37.7,2.4,0.5,Shared,5.61
+U0452,34,Freelancer,Urban,Car - solo,5,25.0,124.8,255.0,1.4,Car,169.03
+U0453,21,Student,Urban,Bus,4,1.1,4.4,82.4,0.5,Shared,15.23
+U0454,20,Remote Worker,Metro,Walking,4,13.9,55.6,42.6,1.5,None,11.16
+U0455,29,Retired,Semi-Urban,Motorcycle,2,21.0,41.9,153.0,1.5,Two-wheeler,43.92
+U0456,30,Student,Semi-Urban,Metro/Subway,3,16.3,48.8,214.1,9.3,Shared,45.36
+U0457,53,Shop Owner,Semi-Urban,Walking,6,6.8,41.0,47.3,0.9,None,7.88
+U0458,52,Remote Worker,Rural,Bus,6,0.5,3.0,95.0,2.6,Shared,17.15
+U0459,24,Freelancer,Metro,Car - solo,5,21.5,107.7,200.0,15.5,Car,143.55
+U0460,49,Remote Worker,Urban,Walking,2,0.5,1.0,131.0,1.0,None,21.55
+U0461,18,Shop Owner,Semi-Urban,Car - solo,7,23.3,163.3,149.8,14.8,Car,163.03
+U0462,24,Student,Metro,Cycling,3,7.5,22.4,88.2,10.5,None,16.38
+U0463,26,Shop Owner,Metro,Cycling,6,0.5,3.0,29.2,0.0,None,7.45
+U0464,47,Business Traveler,Rural,Metro/Subway,6,12.1,72.7,177.8,16.6,Shared,45.07
+U0465,26,Office Worker,Semi-Urban,Car - solo,7,11.6,81.5,13.2,1.0,Car,71.35
+U0466,42,Office Worker,Urban,Car - solo,6,25.6,153.6,27.9,2.0,Car,135.16
+U0467,41,Student,Urban,Bus,3,15.8,47.4,37.6,9.8,Shared,26.28
+U0468,41,Business Traveler,Rural,Car - solo,3,19.3,58.0,440.8,27.8,Car,125.43
+U0469,38,Office Worker,Urban,Bus,5,19.0,94.9,57.9,0.1,Shared,51.36
+U0470,25,Student,Metro,Metro/Subway,3,16.0,47.9,280.5,0.0,Shared,54.22
+U0471,18,Remote Worker,Semi-Urban,Bus,4,3.1,12.2,230.8,4.3,Shared,43.16
+U0472,46,Business Traveler,Urban,Metro/Subway,5,15.9,79.4,461.9,4.5,Shared,132.75
+U0473,35,Student,Urban,Cycling,2,7.3,14.6,100.3,0.6,None,25.68
+U0474,18,Freelancer,Rural,Car - solo,3,22.1,66.2,166.1,21.1,Car,86.13
+U0475,21,Freelancer,Urban,Cycling,3,0.5,1.5,234.3,17.0,None,63.03
+U0476,18,Student,Semi-Urban,Electric Train,4,9.6,38.3,19.8,0.3,Shared,8.26
+U0477,53,Business Traveler,Metro,Car - solo,3,21.2,63.7,663.1,17.0,Car,225.34
+U0478,18,Remote Worker,Metro,Walking,6,3.3,20.0,135.1,5.5,None,35.51
+U0479,50,Retired,Semi-Urban,Car - solo,3,18.8,56.3,114.0,14.9,Car,68.25
+U0480,35,Freelancer,Urban,Car - solo,5,17.2,86.2,79.6,15.0,Car,94.84
+U0481,30,Office Worker,Semi-Urban,Motorcycle,4,19.7,78.7,73.5,4.7,Two-wheeler,47.98
+U0482,28,Student,Metro,Bus,4,15.1,60.5,104.7,0.3,Shared,50.04
+U0483,40,Student,Metro,Walking,4,0.5,2.0,40.7,40.9,None,14.5
+U0484,28,Student,Metro,Walking,4,4.8,19.3,310.3,5.9,None,51.72
+U0485,30,Office Worker,Urban,Bus,5,0.5,2.5,103.1,2.0,Shared,18.15
+U0486,43,Homemaker,Urban,Carpool,3,29.0,87.0,41.7,5.8,Shared,43.68
+U0487,23,Student,Rural,Bus,3,16.2,48.7,52.9,0.0,Shared,27.37
+U0488,35,Freelancer,Metro,Electric Train,4,20.4,81.4,33.0,3.7,Shared,16.67
+U0489,39,Remote Worker,Semi-Urban,Bus,5,7.6,38.1,50.5,0.6,Shared,23.04
+U0490,63,Retired,Urban,Carpool,4,18.8,75.1,80.8,13.2,Shared,46.59
+U0491,46,Office Worker,Urban,Car - solo,4,21.8,87.0,109.2,11.7,Car,92.41
+U0492,37,Office Worker,Metro,Bus,6,8.3,49.8,52.7,18.6,Shared,31.37
+U0493,25,Freelancer,Metro,Cycling,3,9.7,29.2,31.2,0.4,None,5.17
+U0494,44,Shop Owner,Semi-Urban,Motorcycle,6,19.5,117.0,80.2,6.5,Two-wheeler,66.53
+U0495,24,Office Worker,Metro,Electric Train,3,2.5,7.5,74.5,8.4,Shared,14.74
+U0496,33,Remote Worker,Urban,Cycling,5,7.5,37.3,182.8,7.7,None,48.09
+U0497,40,Homemaker,Metro,Walking,5,7.3,36.4,181.0,1.0,None,29.69
+U0498,24,Student,Urban,Metro/Subway,4,10.7,42.7,262.0,3.1,Shared,50.87
+U0499,36,Student,Semi-Urban,Metro/Subway,3,19.5,58.6,156.4,12.8,Shared,38.36
+U0500,31,Retired,Urban,Bus,2,14.2,28.4,173.4,2.6,Shared,55.67
+U0501,36,Student,Urban,Metro/Subway,3,5.0,15.1,183.9,6.2,Shared,33.86
+U0502,26,Office Worker,Semi-Urban,Car - solo,3,22.0,66.0,198.6,30.2,Car,93.07
+U0503,35,Student,Urban,Cycling,5,8.8,43.9,105.7,20.2,None,30.84
+U0504,20,Remote Worker,Urban,Carpool,1,13.1,13.1,305.9,7.8,Shared,56.73
+U0505,30,Freelancer,Urban,Bus,4,18.7,74.9,41.7,0.4,Shared,35.75
+U0506,27,Student,Urban,Metro/Subway,1,14.4,14.4,171.5,0.8,Shared,30.69
+U0507,41,Shop Owner,Metro,Car - solo,4,16.0,63.9,45.3,3.4,Car,65.37
+U0508,43,Student,Semi-Urban,Cycling,3,9.2,27.6,30.4,0.3,None,5.0
+U0509,43,Student,Metro,Electric Train,3,11.4,34.3,113.7,5.8,Shared,34.57
+U0510,39,Office Worker,Semi-Urban,Car - solo,5,26.9,134.7,37.2,7.1,Car,122.82
+U0511,25,Remote Worker,Metro,Walking,4,0.5,2.0,126.3,2.3,None,21.02
+U0512,48,Homemaker,Semi-Urban,Car - solo,1,33.3,33.3,175.3,11.7,Car,58.49
+U0513,32,Student,Metro,Walking,5,9.7,48.5,119.3,1.1,None,19.65
+U0514,29,Office Worker,Urban,Car - solo,4,18.9,75.6,109.1,12.4,Car,83.02
+U0515,44,Office Worker,Urban,Carpool,4,16.6,66.3,183.9,2.2,Shared,57.65
+U0516,48,Shop Owner,Urban,Motorcycle,5,20.3,101.7,60.1,0.6,Two-wheeler,60.8
+U0517,24,Freelancer,Rural,Bus,4,2.7,10.7,52.5,0.2,Shared,12.74
+U0518,40,Business Traveler,Semi-Urban,Car - solo,3,9.3,27.9,400.6,3.2,Car,89.09
+U0519,26,Student,Urban,Walking,5,0.5,2.5,117.1,1.6,None,19.39
+U0520,40,Remote Worker,Semi-Urban,Carpool,6,19.8,119.0,184.4,23.9,Shared,100.56
+U0521,46,Student,Urban,Cycling,5,0.5,2.5,386.9,0.6,None,98.77
+U0522,43,Student,Rural,Bus,4,10.0,40.0,74.8,1.4,Shared,27.88
+U0523,24,Remote Worker,Urban,Bus,4,2.0,8.0,66.6,3.3,Shared,20.69
+U0524,35,Office Worker,Urban,Metro/Subway,5,9.6,47.9,21.8,12.5,Shared,14.46
+U0525,29,Student,Semi-Urban,Metro/Subway,3,18.7,56.1,385.3,2.1,Shared,73.17
+U0526,30,Remote Worker,Semi-Urban,Cycling,7,5.7,40.2,31.0,6.3,None,6.27
+U0527,20,Student,Urban,Metro/Subway,1,14.1,14.1,91.7,0.1,Shared,25.9
+U0528,37,Remote Worker,Urban,Cycling,4,7.1,28.5,85.9,0.8,None,22.06
+U0529,27,Business Traveler,Urban,Car - solo,6,22.4,134.4,321.7,12.6,Car,196.21
+U0530,39,Retired,Urban,Car - solo,4,20.4,81.6,97.7,9.5,Car,85.55
+U0531,22,Remote Worker,Urban,Walking,6,4.1,24.5,18.0,16.7,None,6.14
+U0532,55,Shop Owner,Semi-Urban,Cycling,5,9.4,47.0,59.9,2.2,None,10.19
+U0533,42,Shop Owner,Metro,Bus,4,5.1,20.5,226.6,0.9,Shared,45.02
+U0534,42,Freelancer,Semi-Urban,Motorcycle,4,19.7,78.9,71.7,2.7,Two-wheeler,47.38
+U0535,39,Office Worker,Semi-Urban,Carpool,4,10.0,39.8,211.2,10.6,Shared,72.25
+U0536,28,Freelancer,Metro,Metro/Subway,3,8.7,26.0,188.0,21.2,Shared,39.34
+U0537,24,Business Traveler,Urban,Bus,2,11.3,22.7,337.2,0.1,Shared,94.74
+U0538,37,Retired,Urban,Car - solo,2,28.2,56.4,91.7,17.4,Car,73.64
+U0539,27,Office Worker,Semi-Urban,Car - solo,4,18.4,73.6,266.5,52.1,Car,139.16
+U0540,47,Homemaker,Urban,Bus,3,10.5,31.5,59.0,0.0,Shared,21.74
+U0541,68,Retired,Urban,Car - solo,4,27.3,109.2,41.6,50.7,Car,107.29
+U0542,18,Office Worker,Metro,Metro/Subway,4,13.7,54.6,98.5,0.1,Shared,34.84
+U0543,32,Homemaker,Semi-Urban,Motorcycle,5,20.7,103.6,8.5,6.4,Two-wheeler,48.81
+U0544,31,Office Worker,Metro,Car - solo,4,24.3,97.4,126.9,39.1,Car,109.16
+U0545,44,Student,Metro,Bus,3,15.9,47.8,18.5,3.3,Shared,22.07
+U0546,35,Freelancer,Urban,Carpool,4,18.1,72.4,220.4,0.8,Shared,86.14
+U0547,52,Retired,Metro,Electric Train,4,2.4,9.4,64.2,3.3,Shared,12.32
+U0548,20,Remote Worker,Metro,Walking,5,5.4,26.8,38.5,13.6,None,12.43
+U0549,18,Student,Semi-Urban,Metro/Subway,3,9.8,29.3,179.3,1.1,Shared,51.12
+U0550,35,Shop Owner,Metro,Metro/Subway,5,9.1,45.3,260.5,1.5,Shared,50.8
+U0551,57,Student,Metro,Metro/Subway,3,12.4,37.2,149.7,0.0,Shared,44.78
+U0552,36,Office Worker,Urban,Carpool,4,20.0,80.0,64.9,25.6,Shared,48.42
+U0553,18,Business Traveler,Semi-Urban,Bus,4,20.0,80.0,404.6,4.5,Shared,134.87
+U0554,21,Remote Worker,Metro,Bus,5,13.9,69.6,254.8,1.8,Shared,92.15
+U0555,41,Shop Owner,Semi-Urban,Car - solo,4,22.9,91.6,54.1,4.3,Car,85.78
+U0556,23,Student,Metro,Metro/Subway,1,5.5,5.5,164.5,1.3,Shared,28.04
+U0557,34,Student,Urban,Bus,2,14.3,28.7,325.1,0.7,Shared,64.18
+U0558,68,Shop Owner,Metro,Electric Train,5,0.5,2.5,199.5,3.3,Shared,51.83
+U0559,19,Office Worker,Semi-Urban,Car - solo,6,20.7,124.4,10.4,25.6,Car,111.02
+U0560,20,Remote Worker,Semi-Urban,Carpool,4,16.1,64.5,232.3,8.0,Shared,65.94
+U0561,37,Freelancer,Metro,Metro/Subway,4,17.4,69.6,37.5,0.1,Shared,21.95
+U0562,33,Freelancer,Metro,Walking,3,1.3,3.9,195.6,0.7,None,32.02
+U0563,32,Student,Urban,Bus,4,9.9,39.8,56.2,1.8,Shared,24.84
+U0564,33,Office Worker,Metro,Metro/Subway,6,8.9,53.4,27.3,0.4,Shared,16.51
+U0565,31,Homemaker,Rural,Car - solo,4,22.6,90.5,25.1,5.1,Car,82.62
+U0566,35,Freelancer,Rural,Car - solo,4,4.8,19.2,107.8,41.9,Car,51.48
+U0567,36,Homemaker,Urban,Car - solo,6,15.9,95.4,2.8,48.9,Car,89.19
+U0568,28,Student,Urban,Metro/Subway,2,13.9,27.7,222.2,1.3,Shared,61.83
+U0569,29,Student,Metro,Walking,5,6.6,32.9,210.4,2.8,None,54.2
+U0570,24,Office Worker,Semi-Urban,Motorcycle,4,22.1,88.5,88.0,2.7,Two-wheeler,62.43
+U0571,19,Student,Urban,Electric Train,4,2.0,8.1,279.9,16.3,Shared,49.82
+U0572,25,Homemaker,Rural,Car - solo,2,19.9,39.7,19.7,47.5,Car,45.38
+U0573,26,Student,Urban,Metro/Subway,3,16.7,50.1,55.6,0.9,Shared,18.13
+U0574,25,Office Worker,Urban,Walking,3,1.6,4.9,217.4,19.2,None,39.11
+U0575,25,Homemaker,Semi-Urban,Car - solo,4,18.6,74.6,70.0,0.8,Car,73.56
+U0576,18,Business Traveler,Semi-Urban,Motorcycle,4,14.4,57.6,211.3,0.4,Two-wheeler,79.62
+U0577,34,Remote Worker,Urban,Bus,3,9.4,28.2,58.9,5.7,Shared,21.54
+U0578,18,Student,Urban,Bus,3,0.5,1.5,101.6,12.5,Shared,19.54
+U0579,26,Remote Worker,Semi-Urban,Carpool,4,2.3,9.1,16.2,25.7,Shared,11.33
+U0580,31,Remote Worker,Semi-Urban,Bus,5,13.2,65.9,91.5,1.1,Shared,48.91
+U0581,18,Office Worker,Semi-Urban,Motorcycle,4,17.2,68.9,46.9,2.0,Two-wheeler,43.07
+U0582,43,Business Traveler,Metro,Motorcycle,3,19.8,59.3,380.0,2.0,Two-wheeler,88.78
+U0583,22,Student,Rural,Walking,3,4.8,14.4,208.5,16.6,None,37.16
+U0584,36,Student,Metro,Metro/Subway,4,13.7,54.7,0.7,0.7,Shared,9.98
+U0585,42,Business Traveler,Metro,Motorcycle,3,16.9,50.8,298.9,7.0,Two-wheeler,100.21
+U0586,40,Retired,Semi-Urban,Car - solo,7,17.8,124.8,117.8,16.5,Car,126.12
+U0587,44,Remote Worker,Urban,Cycling,4,14.2,56.8,58.2,0.3,None,9.54
+U0588,56,Shop Owner,Metro,Metro/Subway,6,9.8,58.7,216.1,8.9,Shared,67.23
+U0589,42,Homemaker,Rural,Motorcycle,6,22.1,132.9,137.6,2.6,Two-wheeler,82.19
+U0590,20,Office Worker,Urban,Motorcycle,5,13.2,65.9,140.8,3.2,Two-wheeler,52.98
+U0591,27,Shop Owner,Urban,Carpool,6,27.2,163.5,53.6,38.5,Shared,88.31
+U0592,28,Student,Urban,Metro/Subway,4,8.3,33.4,117.2,0.1,Shared,25.04
+U0593,47,Homemaker,Urban,Motorcycle,4,22.6,90.4,112.8,9.0,Two-wheeler,70.83
+U0594,18,Remote Worker,Rural,Walking,6,4.6,27.4,56.7,0.9,None,14.65
+U0595,18,Office Worker,Urban,Motorcycle,4,10.5,42.0,188.5,5.0,Two-wheeler,67.76
+U0596,35,Student,Semi-Urban,Cycling,4,5.8,23.2,38.8,4.1,None,7.11
+U0597,49,Retired,Rural,Car - solo,4,25.9,103.6,3.1,19.6,Car,90.44
+U0598,26,Remote Worker,Semi-Urban,Carpool,2,16.2,32.5,92.5,7.1,Shared,38.32
+U0599,18,Student,Urban,Electric Train,3,14.0,41.9,8.4,8.0,Shared,8.34
+U0600,42,Homemaker,Urban,Car - solo,7,18.3,127.9,47.6,2.9,Car,119.04
+U0601,62,Remote Worker,Metro,Carpool,3,15.9,47.8,27.2,3.0,Shared,24.7
+U0602,31,Freelancer,Urban,Motorcycle,3,17.0,51.0,111.8,4.0,Two-wheeler,52.02
+U0603,22,Homemaker,Rural,Carpool,4,15.7,63.0,191.3,29.4,Shared,62.73
+U0604,38,Homemaker,Urban,Bus,4,9.6,38.2,2.2,4.0,Shared,16.06
+U0605,37,Freelancer,Semi-Urban,Walking,5,0.5,2.5,232.1,9.3,None,60.97
+U0606,35,Office Worker,Rural,Motorcycle,4,18.4,73.8,7.6,9.1,Two-wheeler,35.88
+U0607,26,Office Worker,Urban,Car - solo,5,17.7,88.4,88.6,31.2,Car,93.95
+U0608,31,Student,Semi-Urban,Metro/Subway,3,10.6,31.8,146.6,2.6,Shared,30.04
+U0609,31,Homemaker,Semi-Urban,Motorcycle,3,17.8,53.5,82.3,2.0,Two-wheeler,45.24
+U0610,25,Student,Rural,Bus,5,0.5,2.5,135.5,0.1,Shared,23.07
+U0611,18,Remote Worker,Urban,Carpool,7,22.2,155.3,35.8,12.8,Shared,72.17
+U0612,18,Homemaker,Rural,Car - solo,5,20.7,103.7,404.3,10.8,Car,154.19
+U0613,21,Freelancer,Urban,Motorcycle,4,20.7,82.6,103.5,0.4,Two-wheeler,63.32
+U0614,35,Homemaker,Metro,Carpool,4,28.9,115.7,298.7,7.0,Shared,97.61
+U0615,32,Remote Worker,Metro,Carpool,6,26.7,159.9,130.4,1.2,Shared,87.27
+U0616,21,Freelancer,Urban,Bus,3,8.4,25.2,107.8,1.9,Shared,27.66
+U0617,44,Business Traveler,Urban,Car - solo,5,22.0,110.0,470.7,6.8,Car,169.46
+U0618,50,Remote Worker,Rural,Walking,3,15.2,45.6,7.7,2.5,None,1.73
+U0619,27,Office Worker,Metro,Car - solo,5,12.1,60.6,13.4,6.9,Car,53.92
+U0620,18,Office Worker,Semi-Urban,Motorcycle,4,7.2,28.9,52.7,15.0,Two-wheeler,24.37
+U0621,24,Office Worker,Metro,Bus,3,17.4,52.1,168.6,4.7,Shared,48.46
+U0622,50,Freelancer,Metro,Bus,3,20.0,60.1,41.5,1.5,Shared,30.21
+U0623,21,Office Worker,Urban,Metro/Subway,6,19.4,116.6,265.1,12.7,Shared,66.36
+U0624,25,Freelancer,Semi-Urban,Car - solo,4,24.4,97.4,32.7,10.3,Car,88.32
+U0625,37,Shop Owner,Urban,Cycling,6,6.4,38.6,79.9,3.4,None,13.68
+U0626,21,Student,Semi-Urban,Cycling,4,15.9,63.8,123.3,1.8,None,20.45
+U0627,30,Homemaker,Semi-Urban,Cycling,6,6.4,38.5,29.1,0.1,None,4.75
+U0628,22,Remote Worker,Semi-Urban,Cycling,6,14.8,88.5,555.1,0.1,None,90.51
+U0629,38,Freelancer,Semi-Urban,Motorcycle,4,25.0,100.0,6.8,0.1,Two-wheeler,46.34
+U0630,18,Student,Metro,Bus,4,6.8,27.3,135.4,4.9,Shared,33.55
+U0631,32,Freelancer,Metro,Bus,6,10.8,64.5,231.0,6.2,Shared,84.97
+U0632,55,Homemaker,Metro,Carpool,4,15.7,62.9,20.6,0.1,Shared,29.26
+U0633,32,Remote Worker,Semi-Urban,Carpool,6,25.3,151.6,114.9,8.1,Shared,93.23
+U0634,19,Remote Worker,Metro,Walking,5,8.5,42.6,248.1,3.6,None,41.12
+U0635,28,Shop Owner,Metro,Bus,3,6.2,18.6,30.3,1.7,Shared,12.45
+U0636,24,Office Worker,Semi-Urban,Cycling,6,2.9,17.2,20.1,2.7,None,5.66
+U0637,33,Freelancer,Rural,Bus,7,8.3,58.4,72.4,0.0,Shared,34.33
+U0638,32,Freelancer,Metro,Metro/Subway,5,21.8,108.9,49.2,0.1,Shared,27.38
+U0639,30,Business Traveler,Semi-Urban,Motorcycle,6,25.3,151.9,974.5,4.2,Two-wheeler,227.38
+U0640,27,Office Worker,Metro,Bus,5,12.3,61.7,300.2,13.7,Shared,75.35
+U0641,23,Remote Worker,Semi-Urban,Carpool,5,22.3,111.7,68.3,21.9,Shared,67.56
+U0642,57,Office Worker,Urban,Metro/Subway,5,0.9,4.7,126.1,5.5,Shared,22.44
+U0643,46,Retired,Semi-Urban,Motorcycle,3,17.1,51.4,110.3,3.0,Two-wheeler,41.49
+U0644,25,Office Worker,Metro,Electric Train,5,9.8,48.8,211.5,7.0,Shared,42.15
+U0645,32,Student,Urban,Electric Train,5,25.2,126.2,204.5,5.0,Shared,50.69
+U0646,33,Student,Semi-Urban,Metro/Subway,6,4.8,29.0,175.8,4.9,Shared,50.93
+U0647,23,Student,Urban,Cycling,2,9.3,18.6,164.7,1.7,None,42.31
+U0648,18,Remote Worker,Metro,Cycling,5,0.7,3.6,483.6,1.2,None,79.06
+U0649,31,Office Worker,Semi-Urban,Bus,1,17.0,17.0,88.5,3.6,Shared,21.65
+U0650,22,Freelancer,Semi-Urban,Car - solo,3,13.7,41.1,70.1,19.1,Car,55.68
+U0651,29,Office Worker,Metro,Metro/Subway,3,0.5,1.5,116.6,15.9,Shared,22.33
+U0652,27,Office Worker,Urban,Metro/Subway,7,9.0,63.2,161.1,0.2,Shared,37.5
+U0653,29,Office Worker,Rural,Motorcycle,3,12.4,37.2,385.0,3.4,Two-wheeler,80.01
+U0654,43,Freelancer,Semi-Urban,Carpool,5,24.5,122.5,24.1,5.3,Shared,55.33
+U0655,25,Freelancer,Urban,Bus,4,6.7,26.7,23.3,0.0,Shared,14.1
+U0656,67,Homemaker,Rural,Bus,7,19.5,136.4,18.9,0.1,Shared,55.63
+U0657,36,Homemaker,Metro,Electric Train,5,4.6,23.2,7.3,2.6,Shared,4.71
+U0658,30,Freelancer,Semi-Urban,Car - solo,7,19.2,134.1,253.3,4.7,Car,176.98
+U0659,34,Student,Rural,Metro/Subway,3,16.3,48.8,101.6,0.0,Shared,34.58
+U0660,50,Student,Metro,Bus,2,6.4,12.7,170.1,7.6,Shared,34.11
+U0661,60,Office Worker,Metro,Electric Train,5,0.5,2.5,65.2,15.4,Shared,13.92
+U0662,33,Student,Urban,Metro/Subway,4,6.4,25.6,120.4,2.9,Shared,35.8
+U0663,27,Student,Metro,Walking,4,18.4,73.4,39.7,1.9,None,10.48
+U0664,31,Remote Worker,Metro,Walking,6,4.7,28.1,126.2,5.9,None,21.7
+U0665,57,Shop Owner,Metro,Car - solo,4,26.6,106.3,80.5,16.0,Car,104.58
+U0666,27,Office Worker,Urban,Bus,4,15.3,61.1,93.6,6.2,Shared,40.01
+U0667,56,Homemaker,Urban,Car - solo,4,17.6,70.4,107.2,8.9,Car,77.69
+U0668,29,Office Worker,Semi-Urban,Motorcycle,6,23.7,142.5,92.6,10.8,Two-wheeler,80.71
+U0669,25,Office Worker,Urban,Carpool,5,14.8,73.9,286.7,4.2,Shared,77.93
+U0670,49,Business Traveler,Metro,Car - solo,4,15.4,61.6,821.0,18.4,Car,188.6
+U0671,40,Homemaker,Metro,Cycling,4,9.8,39.4,190.4,1.3,None,31.29
+U0672,30,Remote Worker,Urban,Cycling,4,16.9,67.5,9.3,1.8,None,2.72
+U0673,57,Business Traveler,Metro,Carpool,7,6.1,42.9,291.8,3.6,Shared,65.9
+U0674,40,Shop Owner,Semi-Urban,Motorcycle,6,18.2,109.1,160.0,0.1,Two-wheeler,74.74
+U0675,18,Remote Worker,Semi-Urban,Bus,5,15.1,75.3,213.2,1.1,Shared,83.59
+U0676,21,Freelancer,Metro,Metro/Subway,5,0.5,2.5,135.9,0.2,Shared,22.64
+U0677,39,Student,Metro,Metro/Subway,3,9.5,28.5,142.1,0.1,Shared,41.32
+U0678,35,Remote Worker,Metro,Bus,4,13.0,51.8,89.3,1.1,Shared,34.75
+U0679,37,Office Worker,Urban,Car - solo,3,26.1,78.4,60.1,2.0,Car,75.32
+U0680,25,Freelancer,Urban,Motorcycle,4,9.9,39.7,75.6,8.9,Two-wheeler,31.75
+U0681,39,Remote Worker,Metro,Walking,3,1.4,4.1,50.7,2.8,None,13.46
+U0682,25,Office Worker,Urban,Car - solo,3,10.9,32.7,259.7,1.0,Car,69.73
+U0683,47,Freelancer,Rural,Car - solo,3,12.9,38.7,58.8,21.5,Car,45.89
+U0684,62,Remote Worker,Urban,Cycling,5,10.2,51.1,31.8,0.5,None,8.22
+U0685,21,Office Worker,Urban,Carpool,4,9.4,37.6,118.2,23.9,Shared,39.32
+U0686,41,Student,Urban,Metro/Subway,4,12.8,51.3,38.9,0.0,Shared,15.45
+U0687,39,Remote Worker,Metro,Carpool,5,24.4,122.0,77.8,59.5,Shared,74.26
+U0688,48,Business Traveler,Metro,Car - solo,4,10.7,42.6,688.2,17.9,Car,151.06
+U0689,37,Student,Metro,Bus,7,0.5,3.5,146.7,0.0,Shared,38.76
+U0690,54,Homemaker,Urban,Car - solo,5,21.0,105.0,105.2,1.1,Car,104.69
+U0691,58,Business Traveler,Semi-Urban,Car - solo,6,20.9,125.4,440.7,18.5,Car,179.64
+U0692,25,Student,Metro,Metro/Subway,2,0.5,1.0,302.9,0.0,Shared,49.55
+U0693,37,Office Worker,Semi-Urban,Carpool,5,20.4,101.9,40.9,8.7,Shared,50.26
+U0694,60,Business Traveler,Metro,Metro/Subway,4,8.2,32.7,662.9,2.2,Shared,114.29
+U0695,33,Freelancer,Semi-Urban,Car - solo,6,21.0,126.1,100.2,25.0,Car,125.98
+U0696,32,Freelancer,Urban,Bus,6,3.1,18.6,29.2,0.1,Shared,14.6
+U0697,42,Student,Metro,Bus,1,18.6,18.6,77.6,0.2,Shared,19.85
+U0698,18,Office Worker,Semi-Urban,Car - solo,6,20.4,122.5,11.5,10.9,Car,105.76
+U0699,30,Remote Worker,Semi-Urban,Carpool,2,23.8,47.6,6.2,14.0,Shared,23.29
+U0700,49,Retired,Semi-Urban,Motorcycle,5,24.8,123.8,87.4,2.6,Two-wheeler,69.95
+U0701,31,Remote Worker,Urban,Cycling,3,6.2,18.6,99.7,0.1,None,16.26
+U0702,24,Shop Owner,Metro,Metro/Subway,5,5.8,28.8,69.5,0.5,Shared,16.54
+U0703,38,Homemaker,Rural,Car - solo,3,11.4,34.2,461.5,3.5,Car,146.8
+U0704,37,Freelancer,Metro,Carpool,7,19.5,136.8,70.1,1.8,Shared,74.49
+U0705,35,Freelancer,Rural,Motorcycle,3,17.3,52.0,141.1,15.4,Two-wheeler,62.14
+U0706,51,Retired,Metro,Metro/Subway,1,7.3,7.3,5.7,12.9,Shared,4.72
+U0707,32,Remote Worker,Semi-Urban,Carpool,4,23.6,94.5,217.2,10.8,Shared,76.34
+U0708,29,Office Worker,Semi-Urban,Walking,3,4.1,12.3,120.8,1.2,None,19.92
+U0709,36,Office Worker,Rural,Car - solo,4,22.6,90.6,125.3,3.1,Car,107.86
+U0710,29,Shop Owner,Semi-Urban,Cycling,4,3.5,14.1,221.3,2.2,None,36.49
+U0711,30,Freelancer,Urban,Motorcycle,4,24.4,97.7,359.2,0.0,Two-wheeler,135.19
+U0712,42,Remote Worker,Urban,Bus,4,16.2,64.8,185.1,1.7,Shared,72.52
+U0713,33,Office Worker,Urban,Car - solo,4,28.1,112.4,33.2,13.5,Car,104.47
+U0714,45,Business Traveler,Metro,Motorcycle,5,35.6,178.1,157.9,15.3,Two-wheeler,108.08
+U0715,19,Office Worker,Urban,Metro/Subway,3,11.2,33.7,57.9,0.9,Shared,20.92
+U0716,42,Office Worker,Urban,Motorcycle,4,30.4,121.5,122.7,0.0,Two-wheeler,85.49
+U0717,18,Shop Owner,Urban,Carpool,5,12.3,61.4,466.0,29.6,Shared,106.92
+U0718,18,Freelancer,Urban,Motorcycle,5,16.7,83.5,259.0,0.7,Two-wheeler,103.45
+U0719,31,Student,Metro,Bus,2,10.3,20.7,77.1,12.1,Shared,29.95
+U0720,41,Shop Owner,Metro,Metro/Subway,4,13.2,52.9,178.8,3.9,Shared,55.75
+U0721,33,Freelancer,Metro,Electric Train,2,4.8,9.6,90.5,0.6,Shared,16.12
+U0722,21,Office Worker,Urban,Carpool,2,15.2,30.4,65.1,8.5,Shared,24.74
+U0723,52,Student,Urban,Bus,6,6.7,40.1,42.5,2.6,Shared,22.86
+U0724,34,Office Worker,Metro,Metro/Subway,7,12.3,86.2,20.2,3.6,Shared,19.29
+U0725,51,Office Worker,Metro,Metro/Subway,3,10.1,30.2,73.3,26.9,Shared,22.47
+U0726,25,Remote Worker,Rural,Cycling,6,4.2,25.2,5.8,6.3,None,2.15
+U0727,52,Remote Worker,Urban,Carpool,5,6.1,30.5,99.0,3.7,Shared,29.39
+U0728,27,Homemaker,Semi-Urban,Carpool,4,13.0,52.0,53.5,4.4,Shared,30.95
+U0729,22,Office Worker,Rural,Car - solo,4,28.2,112.6,389.7,8.5,Car,158.77
+U0730,18,Freelancer,Urban,Car - solo,5,15.5,77.7,177.0,3.5,Car,94.08
+U0731,41,Student,Semi-Urban,Cycling,4,7.4,29.7,185.8,0.8,None,30.44
+U0732,39,Freelancer,Rural,Motorcycle,4,24.4,97.7,16.3,2.3,Two-wheeler,48.16
+U0733,35,Student,Semi-Urban,Metro/Subway,3,3.8,11.4,76.2,0.3,Shared,21.51
+U0734,27,Office Worker,Urban,Motorcycle,6,15.4,92.5,15.8,1.4,Two-wheeler,45.57
+U0735,18,Remote Worker,Urban,Walking,6,10.1,60.4,14.9,1.7,None,2.75
+U0736,38,Freelancer,Semi-Urban,Car - solo,5,34.0,170.0,115.2,0.8,Car,160.27
+U0737,44,Homemaker,Metro,Bus,5,6.5,32.6,95.6,5.5,Shared,29.21
+U0738,52,Office Worker,Metro,Bus,6,11.8,70.8,136.3,0.0,Shared,49.49
+U0739,38,Remote Worker,Urban,Walking,4,2.3,9.4,45.6,0.6,None,7.54
+U0740,37,Student,Urban,Bus,5,3.6,17.9,286.6,0.9,Shared,80.15
+U0741,26,Freelancer,Metro,Bus,3,14.3,42.9,80.0,7.2,Shared,30.94
+U0742,34,Remote Worker,Urban,Carpool,5,20.6,103.1,144.8,1.3,Shared,66.27
+U0743,53,Freelancer,Semi-Urban,Motorcycle,3,18.6,55.9,62.9,0.4,Two-wheeler,35.27
+U0744,30,Student,Metro,Cycling,4,7.0,28.0,28.3,4.5,None,8.1
+U0745,18,Office Worker,Urban,Metro/Subway,4,8.8,35.2,160.6,8.1,Shared,33.99
+U0746,18,Remote Worker,Metro,Cycling,5,9.8,49.0,155.2,11.5,None,27.52
+U0747,52,Freelancer,Metro,Bus,5,12.9,64.6,407.1,0.2,Shared,91.29
+U0748,18,Student,Urban,Bus,4,1.8,7.1,299.3,4.6,Shared,52.41
+U0749,37,Student,Semi-Urban,Bus,3,0.9,2.8,175.9,1.3,Shared,30.01
+U0750,50,Freelancer,Metro,Electric Train,5,1.2,6.2,301.9,3.5,Shared,50.69
+U0751,28,Office Worker,Urban,Bus,4,2.5,9.8,236.4,2.5,Shared,42.78
+U0752,18,Office Worker,Urban,Motorcycle,3,24.4,73.1,62.7,6.2,Two-wheeler,49.78
+U0753,37,Shop Owner,Metro,Cycling,3,2.2,6.6,7.1,1.7,None,2.14
+U0754,24,Freelancer,Semi-Urban,Carpool,5,21.6,107.8,115.5,3.9,Shared,63.9
+U0755,35,Office Worker,Rural,Motorcycle,5,0.5,2.5,154.7,0.3,Two-wheeler,40.63
+U0756,46,Freelancer,Urban,Motorcycle,4,22.7,90.9,246.6,1.3,Two-wheeler,80.98
+U0757,38,Shop Owner,Urban,Cycling,3,7.3,21.9,14.7,0.1,None,3.76
+U0758,25,Freelancer,Rural,Carpool,4,25.1,100.5,301.0,5.2,Shared,91.38
+U0759,31,Business Traveler,Metro,Motorcycle,5,22.1,110.6,61.9,2.4,Two-wheeler,65.57
+U0760,65,Homemaker,Semi-Urban,Bus,7,7.4,52.1,80.0,1.9,Shared,40.83
+U0761,51,Retired,Metro,Car - solo,1,18.9,18.9,138.7,5.8,Car,39.48
+U0762,47,Remote Worker,Urban,Walking,5,7.4,36.9,50.9,1.8,None,8.65
+U0763,48,Remote Worker,Urban,Walking,3,3.9,11.7,415.7,16.3,None,109.12
+U0764,42,Office Worker,Rural,Walking,4,5.7,22.7,30.7,0.1,None,5.03
+U0765,20,Office Worker,Semi-Urban,Motorcycle,4,17.5,70.2,30.6,5.7,Two-wheeler,40.21
+U0766,28,Student,Rural,Bus,4,20.9,83.7,95.0,2.4,Shared,48.18
+U0767,38,Freelancer,Semi-Urban,Bus,6,11.0,66.1,71.8,3.0,Shared,44.35
+U0768,30,Student,Metro,Metro/Subway,1,11.4,11.4,241.4,6.6,Shared,42.65
+U0769,39,Homemaker,Urban,Motorcycle,4,17.9,71.5,103.0,1.3,Two-wheeler,58.39
+U0770,31,Shop Owner,Urban,Walking,1,0.5,0.5,48.6,4.4,None,8.76
+U0771,31,Business Traveler,Urban,Car - solo,5,14.4,72.1,294.4,17.4,Car,111.29
+U0772,30,Business Traveler,Metro,Car - solo,4,15.3,61.2,160.4,16.3,Car,80.15
+U0773,29,Shop Owner,Urban,Car - solo,4,18.2,72.9,88.0,19.2,Car,78.62
+U0774,33,Business Traveler,Semi-Urban,Metro/Subway,4,17.3,69.2,333.1,3.0,Shared,97.8
+U0775,25,Homemaker,Rural,Walking,4,0.5,2.0,106.0,0.3,None,27.09
+U0776,44,Student,Urban,Cycling,5,0.5,2.5,233.2,9.0,None,39.74
+U0777,19,Shop Owner,Metro,Carpool,3,29.7,89.0,40.1,24.9,Shared,51.61
+U0778,49,Shop Owner,Urban,Motorcycle,3,15.0,44.9,129.1,2.2,Two-wheeler,41.5
+U0779,42,Business Traveler,Semi-Urban,Car - solo,5,23.4,117.0,516.0,1.2,Car,229.12
+U0780,38,Business Traveler,Metro,Motorcycle,5,29.8,149.0,265.6,1.0,Two-wheeler,109.95
+U0781,55,Business Traveler,Semi-Urban,Bus,4,13.4,53.8,299.0,1.8,Shared,69.8
+U0782,28,Student,Urban,Metro/Subway,4,0.5,2.0,76.1,22.9,Shared,17.16
+U0783,23,Shop Owner,Urban,Bus,4,8.5,34.1,63.1,1.0,Shared,23.61
+U0784,30,Student,Urban,Cycling,2,5.0,9.9,18.3,7.1,None,4.35
+U0785,31,Student,Urban,Cycling,6,20.8,124.5,114.5,1.7,None,29.54
+U0786,39,Office Worker,Semi-Urban,Carpool,5,20.4,102.2,185.6,5.3,Shared,73.32
+U0787,31,Shop Owner,Metro,Metro/Subway,4,13.2,52.9,78.3,30.0,Shared,27.91
+U0788,26,Office Worker,Urban,Motorcycle,4,15.8,63.2,63.7,12.8,Two-wheeler,41.01
+U0789,48,Shop Owner,Metro,Car - solo,6,17.7,106.0,107.0,9.4,Car,117.18
+U0790,51,Homemaker,Metro,Walking,4,7.7,30.9,226.4,15.2,None,39.83
+U0791,18,Office Worker,Metro,Electric Train,4,10.0,40.0,24.9,2.3,Shared,9.69
+U0792,36,Retired,Metro,Bus,4,19.9,79.7,84.7,0.1,Shared,44.53
+U0793,38,Student,Urban,Metro/Subway,4,7.2,28.8,20.1,6.2,Shared,9.59
+U0794,36,Office Worker,Urban,Walking,4,5.3,21.3,255.9,44.3,None,50.22
+U0795,40,Homemaker,Urban,Metro/Subway,3,0.5,1.5,318.0,3.7,Shared,52.82
+U0796,37,Office Worker,Urban,Car - solo,4,14.9,59.6,349.5,1.7,Car,106.82
+U0797,56,Shop Owner,Urban,Metro/Subway,5,7.2,36.0,0.7,4.2,Shared,7.3
+U0798,49,Business Traveler,Urban,Car - solo,3,11.2,33.7,550.9,3.7,Car,118.52
+U0799,40,Remote Worker,Metro,Walking,4,0.5,2.0,298.6,0.3,None,48.72
+U0800,24,Office Worker,Urban,Carpool,3,13.6,40.7,77.8,2.8,Shared,29.98
+U0801,30,Remote Worker,Semi-Urban,Carpool,3,17.8,53.4,238.5,35.1,Shared,67.59
+U0802,53,Retired,Semi-Urban,Motorcycle,4,19.4,77.5,78.5,1.7,Two-wheeler,47.68
+U0803,18,Office Worker,Urban,Metro/Subway,4,6.9,27.8,168.2,4.9,Shared,33.3
+U0804,32,Homemaker,Metro,Electric Train,4,7.5,30.0,2.1,1.6,Shared,4.73
+U0805,31,Remote Worker,Urban,Walking,4,1.0,3.9,37.6,3.3,None,6.77
+U0806,22,Remote Worker,Semi-Urban,Bus,3,4.7,14.0,205.5,2.2,Shared,39.32
+U0807,20,Student,Urban,Metro/Subway,1,10.5,10.5,62.0,9.7,Shared,13.83
+U0808,31,Office Worker,Metro,Electric Train,2,2.9,5.8,79.2,0.7,Shared,13.8
+U0809,54,Business Traveler,Semi-Urban,Car - solo,6,21.9,131.1,157.7,9.0,Car,136.42
+U0810,25,Remote Worker,Metro,Carpool,3,13.5,40.6,81.8,4.8,Shared,30.97
+U0811,18,Shop Owner,Semi-Urban,Carpool,6,23.4,140.5,57.6,2.0,Shared,67.56
+U0812,47,Shop Owner,Urban,Motorcycle,5,26.7,133.7,267.1,0.0,Two-wheeler,127.72
+U0813,18,Office Worker,Semi-Urban,Bus,4,13.3,53.1,101.8,0.6,Shared,37.18
+U0814,31,Retired,Metro,Bus,3,12.0,36.0,197.8,7.5,Shared,47.56
+U0815,55,Freelancer,Semi-Urban,Cycling,2,13.8,27.6,12.0,1.7,None,3.4
+U0816,26,Remote Worker,Semi-Urban,Cycling,5,1.9,9.7,105.4,2.7,None,27.4
+U0817,27,Remote Worker,Urban,Bus,4,18.5,74.1,140.3,4.2,Shared,52.23
+U0818,39,Student,Semi-Urban,Electric Train,3,14.8,44.3,414.0,1.5,Shared,73.52
+U0819,41,Shop Owner,Semi-Urban,Bus,3,25.6,76.8,5.8,4.9,Shared,32.01
+U0820,27,Student,Rural,Bus,4,12.1,48.2,140.8,1.0,Shared,41.73
+U0821,44,Freelancer,Semi-Urban,Motorcycle,2,19.2,38.3,110.8,3.5,Two-wheeler,35.82
+U0822,20,Student,Urban,Bus,3,14.5,43.5,108.2,1.9,Shared,44.76
+U0823,18,Student,Metro,Cycling,4,0.5,2.0,126.9,1.5,None,20.99
+U0824,37,Freelancer,Urban,Bus,4,14.3,57.3,143.9,0.5,Shared,58.88
+U0825,41,Student,Semi-Urban,Walking,5,9.8,48.9,296.1,0.0,None,48.27
+U0826,28,Student,Urban,Bus,4,4.0,16.0,76.1,2.0,Shared,25.96
+U0827,27,Remote Worker,Urban,Bus,4,4.8,19.0,81.3,2.3,Shared,28.53
+U0828,38,Shop Owner,Rural,Car - solo,3,12.9,38.6,19.1,8.7,Car,36.88
+U0829,32,Shop Owner,Urban,Car - solo,4,11.9,47.6,232.7,4.0,Car,78.26
+U0830,39,Remote Worker,Urban,Bus,7,7.9,55.1,50.9,0.3,Shared,34.27
+U0831,45,Retired,Metro,Electric Train,3,1.8,5.5,12.5,1.1,Shared,4.11
+U0832,45,Remote Worker,Urban,Cycling,2,0.7,1.4,334.7,11.8,None,87.61
+U0833,29,Office Worker,Metro,Electric Train,3,6.9,20.7,55.7,0.0,Shared,16.91
+U0834,68,Shop Owner,Rural,Bus,4,13.3,53.0,70.6,0.7,Shared,32.09
+U0835,31,Student,Metro,Electric Train,4,14.6,58.4,141.1,14.7,Shared,33.41
+U0836,39,Student,Rural,Walking,4,0.5,2.0,187.8,0.0,None,47.9
+U0837,56,Business Traveler,Urban,Motorcycle,5,3.0,15.1,140.1,1.2,Two-wheeler,29.82
+U0838,35,Remote Worker,Metro,Bus,3,10.1,30.4,419.9,20.3,Shared,84.06
+U0839,21,Office Worker,Rural,Motorcycle,4,26.1,104.4,559.0,4.0,Two-wheeler,138.47
+U0840,35,Shop Owner,Metro,Electric Train,4,11.8,47.1,142.9,3.7,Shared,30.12
+U0841,33,Student,Rural,Metro/Subway,4,4.1,16.3,207.5,2.7,Shared,37.24
+U0842,30,Office Worker,Metro,Metro/Subway,7,5.2,36.5,130.8,0.0,Shared,39.82
+U0843,41,Shop Owner,Metro,Carpool,6,27.8,167.0,242.0,4.0,Shared,108.9
+U0844,40,Freelancer,Metro,Bus,7,9.8,68.6,57.3,1.7,Shared,41.38
+U0845,38,Business Traveler,Urban,Motorcycle,6,13.2,79.1,168.0,8.6,Two-wheeler,64.33
+U0846,33,Office Worker,Rural,Motorcycle,6,3.7,22.1,52.8,0.3,Two-wheeler,18.52
+U0847,18,Freelancer,Urban,Carpool,5,13.8,69.0,52.3,21.6,Shared,41.03
+U0848,27,Remote Worker,Semi-Urban,Cycling,7,12.9,90.3,15.4,11.3,None,4.68
+U0849,28,Student,Urban,Electric Train,4,15.7,62.9,219.4,0.7,Shared,44.07
+U0850,26,Office Worker,Urban,Motorcycle,4,19.4,77.4,111.0,0.2,Two-wheeler,62.87
+U0851,46,Business Traveler,Urban,Car - solo,2,25.0,50.0,537.8,4.5,Car,130.08
+U0852,24,Remote Worker,Semi-Urban,Cycling,5,0.5,2.5,122.2,2.3,None,20.36
+U0853,36,Business Traveler,Urban,Bus,5,9.2,46.2,108.3,0.9,Shared,35.63
+U0854,49,Business Traveler,Rural,Car - solo,4,18.3,73.0,1164.6,1.3,Car,357.93
+U0855,41,Shop Owner,Semi-Urban,Carpool,4,15.1,60.5,3.7,8.5,Shared,27.45
+U0856,56,Student,Rural,Bus,3,4.2,12.7,3.0,1.6,Shared,5.95
+U0857,21,Student,Metro,Metro/Subway,3,10.4,31.3,20.8,1.2,Shared,9.18
+U0858,37,Retired,Rural,Walking,3,9.3,27.8,30.0,0.7,None,5.04
+U0859,45,Retired,Metro,Electric Train,6,14.4,86.2,28.5,3.2,Shared,19.07
+U0860,25,Student,Metro,Cycling,2,10.5,21.0,101.2,3.5,None,26.49
+U0861,25,Student,Semi-Urban,Metro/Subway,2,3.3,6.7,128.4,15.8,Shared,25.16
+U0862,68,Homemaker,Urban,Motorcycle,4,13.5,53.9,91.8,4.4,Two-wheeler,48.3
+U0863,36,Retired,Semi-Urban,Motorcycle,5,8.3,41.3,322.3,2.6,Two-wheeler,101.11
+U0864,45,Freelancer,Metro,Car - solo,5,22.1,110.5,249.6,29.7,Car,161.2
+U0865,54,Office Worker,Metro,Bus,5,23.2,116.2,113.2,2.5,Shared,63.71
+U0866,37,Student,Metro,Metro/Subway,2,12.4,24.8,59.5,0.7,Shared,19.72
+U0867,40,Business Traveler,Semi-Urban,Bus,4,8.7,34.7,123.4,1.2,Shared,45.09
+U0868,26,Office Worker,Semi-Urban,Walking,7,0.5,3.5,32.8,2.2,None,8.77
+U0869,33,Shop Owner,Semi-Urban,Motorcycle,6,19.3,115.7,102.8,23.8,Two-wheeler,82.37
+U0870,34,Business Traveler,Urban,Car - solo,3,22.3,66.9,1554.6,54.8,Car,462.55
+U0871,18,Student,Urban,Bus,2,25.6,51.2,234.3,9.1,Shared,81.23
+U0872,30,Freelancer,Metro,Electric Train,4,15.0,60.1,24.5,20.4,Shared,15.72
+U0873,25,Office Worker,Metro,Bus,4,10.7,42.6,17.1,0.0,Shared,20.79
+U0874,18,Office Worker,Semi-Urban,Motorcycle,2,12.0,24.0,249.2,3.2,Two-wheeler,51.92
+U0875,39,Remote Worker,Urban,Carpool,7,19.8,138.9,475.9,31.0,Shared,140.65
+U0876,23,Freelancer,Semi-Urban,Bus,5,10.8,53.9,50.9,3.3,Shared,29.69
+U0877,34,Remote Worker,Semi-Urban,Bus,5,5.0,25.2,58.1,1.8,Shared,19.53
+U0878,40,Shop Owner,Urban,Bus,4,14.7,58.9,164.5,18.9,Shared,53.15
+U0879,49,Business Traveler,Metro,Motorcycle,4,18.9,75.6,287.6,3.2,Two-wheeler,81.2
+U0880,26,Student,Rural,Bus,4,2.4,9.6,448.7,11.9,Shared,79.14
+U0881,18,Remote Worker,Metro,Walking,4,7.9,31.7,135.4,0.6,None,34.65
+U0882,59,Shop Owner,Semi-Urban,Car - solo,5,11.0,55.0,8.1,39.7,Car,55.45
+U0883,18,Student,Metro,Metro/Subway,2,16.0,31.9,163.0,0.6,Shared,32.34
+U0884,26,Shop Owner,Metro,Cycling,3,13.4,40.3,69.9,0.9,None,18.0
+U0885,33,Freelancer,Rural,Motorcycle,6,17.3,104.0,204.8,2.1,Two-wheeler,80.17
+U0886,54,Student,Rural,Walking,2,0.5,1.1,140.6,0.6,None,23.03
+U0887,34,Student,Semi-Urban,Cycling,5,2.8,13.9,227.1,1.1,None,37.22
+U0888,32,Business Traveler,Metro,Motorcycle,5,17.0,84.8,804.2,0.5,Two-wheeler,169.02
+U0889,40,Retired,Metro,Bus,4,23.3,93.0,38.6,1.0,Shared,45.87
+U0890,45,Retired,Metro,Metro/Subway,4,3.3,13.1,110.0,5.6,Shared,21.32
+U0891,18,Freelancer,Metro,Bus,6,7.7,46.3,187.1,0.6,Shared,48.44
+U0892,46,Office Worker,Metro,Metro/Subway,4,14.3,57.3,359.5,12.5,Shared,71.17
+U0893,52,Freelancer,Urban,Bus,5,3.5,17.4,170.7,1.3,Shared,34.79
+U0894,38,Freelancer,Semi-Urban,Motorcycle,4,7.3,29.3,273.9,3.8,Two-wheeler,83.64
+U0895,42,Freelancer,Metro,Car - solo,3,23.1,69.3,104.5,19.2,Car,78.38
+U0896,20,Office Worker,Metro,Car - solo,6,24.2,145.2,56.0,2.9,Car,130.39
+U0897,27,Freelancer,Urban,Car - solo,5,16.5,82.3,57.1,22.5,Car,82.04
+U0898,38,Remote Worker,Semi-Urban,Carpool,7,12.3,85.9,193.3,10.2,Shared,68.81
+U0899,42,Retired,Metro,Metro/Subway,6,0.7,4.1,120.3,1.5,Shared,20.62
+U0900,45,Retired,Urban,Carpool,4,17.4,69.7,295.5,5.2,Shared,77.86
+U0901,42,Homemaker,Urban,Car - solo,4,25.4,101.5,174.8,12.2,Car,131.32
+U0902,37,Student,Semi-Urban,Metro/Subway,4,10.1,40.4,28.1,7.1,Shared,13.12
+U0903,18,Student,Urban,Electric Train,4,7.2,28.6,4.1,0.2,Shared,4.42
+U0904,34,Student,Urban,Bus,7,9.4,66.0,83.4,0.1,Shared,39.04
+U0905,30,Business Traveler,Urban,Car - solo,5,15.6,77.8,262.8,10.8,Car,109.57
+U0906,26,Business Traveler,Semi-Urban,Carpool,7,24.9,174.1,267.1,0.1,Shared,139.76
+U0907,30,Office Worker,Rural,Motorcycle,3,23.7,71.1,28.1,7.0,Two-wheeler,40.23
+U0908,18,Freelancer,Urban,Motorcycle,4,10.0,40.1,75.0,0.0,Two-wheeler,37.02
+U0909,45,Office Worker,Urban,Bus,3,5.7,17.0,204.7,13.0,Shared,42.43
+U0910,37,Shop Owner,Urban,Carpool,6,4.8,28.7,81.3,2.7,Shared,25.57
+U0911,26,Remote Worker,Semi-Urban,Carpool,3,22.7,68.0,20.2,8.9,Shared,34.86
+U0912,61,Shop Owner,Urban,Carpool,5,16.1,80.3,232.6,3.6,Shared,71.62
+U0913,43,Student,Rural,Metro/Subway,5,9.6,48.0,302.5,1.5,Shared,85.92
+U0914,18,Office Worker,Urban,Carpool,5,16.0,80.1,89.5,15.4,Shared,58.76
+U0915,64,Shop Owner,Urban,Cycling,5,7.3,36.5,68.6,5.1,None,12.16
+U0916,18,Retired,Semi-Urban,Motorcycle,2,17.4,34.8,20.0,0.0,Two-wheeler,18.76
+U0917,18,Freelancer,Semi-Urban,Walking,5,6.3,31.7,363.8,18.3,None,62.81
+U0918,26,Shop Owner,Metro,Metro/Subway,2,16.6,33.3,181.0,1.4,Shared,52.33
+U0919,27,Student,Semi-Urban,Bus,4,10.7,42.8,1.6,0.9,Shared,16.94
+U0920,18,Student,Urban,Metro/Subway,4,11.2,45.0,79.5,1.3,Shared,21.18
+U0921,43,Shop Owner,Urban,Car - solo,6,20.5,123.2,120.0,0.6,Car,122.11
+U0922,40,Freelancer,Urban,Motorcycle,5,20.0,100.0,165.8,6.6,Two-wheeler,88.16
+U0923,44,Remote Worker,Metro,Walking,6,3.6,21.7,61.0,13.2,None,12.47
+U0924,33,Shop Owner,Urban,Car - solo,5,22.7,113.3,172.7,8.9,Car,139.93
+U0925,55,Business Traveler,Metro,Bus,3,7.0,21.1,176.7,5.4,Shared,54.24
+U0926,37,Homemaker,Metro,Electric Train,7,10.4,72.7,76.1,1.9,Shared,22.2
+U0927,55,Homemaker,Metro,Metro/Subway,6,15.6,93.8,58.2,1.3,Shared,26.38
+U0928,33,Office Worker,Urban,Motorcycle,5,18.5,92.5,200.9,33.4,Two-wheeler,80.43
+U0929,46,Shop Owner,Rural,Bus,6,2.6,15.8,250.1,4.0,Shared,47.6
+U0930,39,Remote Worker,Metro,Cycling,4,8.2,33.0,101.9,1.7,None,26.3
+U0931,34,Homemaker,Rural,Car - solo,5,11.9,59.6,71.5,16.2,Car,64.36
+U0932,62,Business Traveler,Metro,Carpool,4,13.7,54.7,301.3,21.7,Shared,103.52
+U0933,34,Freelancer,Urban,Car - solo,5,26.4,131.8,75.6,1.8,Car,122.2
+U0934,42,Office Worker,Urban,Carpool,5,12.4,62.1,39.9,2.8,Shared,32.57
+U0935,18,Office Worker,Semi-Urban,Carpool,4,19.1,76.2,292.8,34.1,Shared,112.57
+U0936,30,Office Worker,Rural,Cycling,4,0.5,2.0,30.3,4.0,None,8.49
+U0937,34,Homemaker,Semi-Urban,Car - solo,4,12.1,48.6,123.0,5.4,Car,61.44
+U0938,22,Remote Worker,Semi-Urban,Cycling,6,2.7,16.0,138.8,1.3,None,35.65
+U0939,49,Remote Worker,Urban,Walking,5,3.9,19.3,76.2,4.9,None,13.38
+U0940,35,Office Worker,Urban,Bus,4,10.1,40.5,28.1,23.5,Shared,27.31
+U0941,36,Remote Worker,Urban,Bus,4,1.2,4.9,160.0,22.0,Shared,32.2
+U0942,22,Student,Semi-Urban,Metro/Subway,4,4.4,17.5,54.1,1.8,Shared,12.26
+U0943,36,Office Worker,Rural,Carpool,4,16.4,65.4,73.9,7.5,Shared,40.41
+U0944,27,Office Worker,Urban,Bus,5,10.8,54.1,131.8,7.6,Shared,55.93
+U0945,24,Office Worker,Metro,Cycling,6,7.8,46.5,81.0,0.8,None,13.35
+U0946,39,Homemaker,Urban,Bus,6,8.0,48.0,14.5,3.9,Shared,21.62
+U0947,29,Freelancer,Metro,Metro/Subway,4,17.0,68.0,401.5,0.8,Shared,114.62
+U0948,29,Office Worker,Urban,Metro/Subway,3,17.0,51.1,76.5,0.5,Shared,21.64
+U0949,22,Office Worker,Metro,Metro/Subway,4,0.5,2.0,41.6,1.6,Shared,7.44
+U0950,42,Shop Owner,Metro,Carpool,5,13.3,66.6,77.3,0.1,Shared,40.0
+U0951,30,Office Worker,Urban,Metro/Subway,5,0.5,2.5,130.1,3.1,Shared,22.25
+U0952,34,Freelancer,Semi-Urban,Bus,4,9.7,38.8,81.4,0.0,Shared,35.72
+U0953,33,Student,Urban,Metro/Subway,3,9.3,27.9,10.7,0.0,Shared,7.7
+U0954,43,Office Worker,Semi-Urban,Car - solo,7,14.5,101.7,157.3,5.7,Car,125.78
+U0955,18,Remote Worker,Urban,Bus,3,11.6,34.9,6.3,7.4,Shared,16.48
+U0956,19,Office Worker,Urban,Motorcycle,7,30.0,209.7,90.0,13.8,Two-wheeler,110.84
+U0957,24,Remote Worker,Semi-Urban,Carpool,4,12.2,48.8,73.2,28.9,Shared,37.55
+U0958,40,Shop Owner,Urban,Car - solo,5,13.5,67.7,161.0,3.7,Car,83.23
+U0959,40,Remote Worker,Semi-Urban,Walking,5,11.3,56.4,76.1,16.0,None,15.47
+U0960,31,Shop Owner,Semi-Urban,Car - solo,4,26.3,105.1,187.4,19.3,Car,138.83
+U0961,42,Shop Owner,Urban,Carpool,5,19.6,98.2,9.8,8.5,Shared,44.52
+U0962,25,Office Worker,Metro,Bus,5,7.7,38.3,63.1,1.0,Shared,25.22
+U0963,18,Remote Worker,Rural,Bus,4,10.2,40.8,161.9,4.5,Shared,42.97
+U0964,27,Student,Semi-Urban,Bus,5,9.6,48.1,17.4,8.7,Shared,23.03
+U0965,20,Office Worker,Semi-Urban,Carpool,4,25.2,100.8,50.2,0.5,Shared,49.75
+U0966,54,Homemaker,Metro,Metro/Subway,4,16.4,65.6,122.9,0.1,Shared,31.7
+U0967,18,Student,Semi-Urban,Metro/Subway,2,0.5,1.0,189.5,1.6,Shared,31.37
+U0968,34,Freelancer,Urban,Cycling,4,11.6,46.6,30.4,1.4,None,5.23
+U0969,52,Business Traveler,Urban,Bus,5,15.3,76.6,111.5,8.6,Shared,49.35
+U0970,20,Remote Worker,Semi-Urban,Bus,4,6.7,26.9,43.7,3.0,Shared,18.04
+U0971,19,Office Worker,Urban,Car - solo,4,21.9,87.7,111.9,15.9,Car,94.19
+U0972,29,Remote Worker,Semi-Urban,Carpool,3,10.7,32.2,218.1,1.4,Shared,49.05
+U0973,30,Freelancer,Metro,Electric Train,5,4.1,20.3,334.5,0.2,Shared,57.2
+U0974,18,Office Worker,Urban,Bus,3,15.1,45.2,41.9,2.5,Shared,24.71
+U0975,26,Freelancer,Metro,Car - solo,3,22.0,66.1,78.8,18.5,Car,71.36
+U0976,18,Remote Worker,Semi-Urban,Cycling,4,0.5,2.0,63.4,0.0,None,10.34
+U0977,35,Remote Worker,Semi-Urban,Carpool,4,10.0,39.8,347.1,36.1,Shared,79.89
+U0978,42,Shop Owner,Metro,Bus,4,0.6,2.6,14.5,0.0,Shared,3.37
+U0979,39,Student,Metro,Cycling,4,0.5,2.0,158.5,3.3,None,41.06
+U0980,40,Remote Worker,Rural,Carpool,3,29.2,87.6,281.4,72.4,Shared,95.79
+U0981,36,Freelancer,Rural,Car - solo,3,17.6,52.7,19.9,7.0,Car,50.27
+U0982,37,Retired,Metro,Car - solo,3,14.2,42.6,801.2,21.2,Car,170.08
+U0983,48,Homemaker,Semi-Urban,Carpool,5,21.1,105.7,28.8,2.7,Shared,48.69
+U0984,18,Freelancer,Semi-Urban,Bus,5,15.0,74.8,127.1,0.2,Shared,49.59
+U0985,21,Remote Worker,Rural,Bus,5,8.0,40.0,144.7,0.2,Shared,39.06
+U0986,47,Business Traveler,Semi-Urban,Motorcycle,5,17.0,84.9,93.2,10.0,Two-wheeler,63.54
+U0987,19,Freelancer,Urban,Metro/Subway,3,9.7,29.1,51.0,1.1,Shared,13.69
+U0988,45,Shop Owner,Metro,Metro/Subway,2,9.9,19.9,67.3,5.5,Shared,15.55
+U0989,40,Retired,Semi-Urban,Carpool,5,22.9,114.3,91.2,0.2,Shared,70.28
+U0990,47,Remote Worker,Metro,Carpool,5,15.1,75.7,55.1,58.3,Shared,51.32
+U0991,49,Homemaker,Metro,Metro/Subway,3,8.8,26.3,190.4,0.4,Shared,35.77
+U0992,61,Business Traveler,Urban,Car - solo,3,17.8,53.4,254.6,38.8,Car,116.74
+U0993,25,Office Worker,Metro,Bus,6,13.1,78.6,163.9,2.7,Shared,72.61
+U0994,51,Business Traveler,Urban,Car - solo,2,30.2,60.3,520.6,5.8,Car,136.12
+U0995,21,Remote Worker,Metro,Carpool,5,17.4,86.9,5.3,0.1,Shared,36.61
+U0996,28,Student,Urban,Metro/Subway,3,6.7,20.1,66.9,1.2,Shared,14.7
+U0997,39,Office Worker,Semi-Urban,Motorcycle,4,22.5,89.8,88.3,14.0,Two-wheeler,57.14
+U0998,42,Remote Worker,Metro,Carpool,6,6.8,41.1,44.7,12.5,Shared,26.58
+U0999,29,Office Worker,Urban,Car - solo,5,27.5,137.7,118.1,28.6,Car,139.23
+U1000,42,Office Worker,Urban,Car - solo,4,25.2,100.7,59.0,61.3,Car,110.54
