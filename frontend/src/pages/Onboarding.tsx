@@ -20,12 +20,14 @@ const schema = z.object({
   budget_level: z.string().min(1)
 });
 
+type OnboardingFormData = z.infer<typeof schema>;
+
 const Onboarding = () => {
   const navigate = useNavigate();
   const { setUser, setFootprint } = useAppStore();
   const [loading, setLoading] = useState(false);
 
-  const { register, handleSubmit, formState: { errors } } = useForm({
+  const { register, handleSubmit, formState: { errors } } = useForm<OnboardingFormData>({
     resolver: zodResolver(schema),
     defaultValues: {
       name: '',
@@ -37,11 +39,11 @@ const Onboarding = () => {
     }
   });
 
-  const onSubmit = async (data: any) => {
+  const onSubmit = async (data: OnboardingFormData) => {
     setLoading(true);
     try {
       // Build the user profile from form data
-      const userId = `user_${Date.now()}`;
+      const userId = crypto.randomUUID();
       const userProfile = {
         id: userId,
         name: data.name,
@@ -108,7 +110,15 @@ const Onboarding = () => {
                 <Select {...register('country')} options={[
                   { value: 'USA', label: 'United States' },
                   { value: 'GBR', label: 'United Kingdom' },
-                  { value: 'IND', label: 'India' }
+                  { value: 'IND', label: 'India' },
+                  { value: 'CHN', label: 'China' },
+                  { value: 'DEU', label: 'Germany' },
+                  { value: 'FRA', label: 'France' },
+                  { value: 'JPN', label: 'Japan' },
+                  { value: 'CAN', label: 'Canada' },
+                  { value: 'AUS', label: 'Australia' },
+                  { value: 'BRA', label: 'Brazil' },
+                  { value: 'ITA', label: 'Italy' }
                 ]} />
               </div>
               <div>

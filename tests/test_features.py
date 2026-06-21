@@ -32,8 +32,8 @@ def test_build_transport_features():
 
 def test_build_waste_features():
     waste_df = pd.DataFrame({
-        "waste_kg_per_cap_per_day": [1.0, 2.0],
-        "waste_emission_factor_kg_co2e_per_kg": [0.5, 0.5],
+        "waste_generated_kg_per_capita_per_day": [1.0, 2.0],
+        "estimated_waste_emissions_kg_co2e_per_kg_waste": [0.5, 0.5],
         "landfill_rate_pct": [50.0, 80.0],
         "recycling_rate_pct": [30.0, 10.0],
         "composting_rate_pct": [20.0, 10.0]

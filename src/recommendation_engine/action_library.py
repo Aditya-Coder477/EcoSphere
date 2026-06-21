@@ -7,10 +7,13 @@ Registry of predefined carbon reduction actions.
 from typing import List
 from .schemas import ActionDefinition, RecommendationContext
 
+_ACTION_LIBRARY: List[ActionDefinition] = []
+
 def get_action_library() -> List[ActionDefinition]:
     """Returns the full list of available carbon-reduction actions."""
-    
-    return [
+    global _ACTION_LIBRARY
+    if not _ACTION_LIBRARY:
+        _ACTION_LIBRARY = [
         # --- Transport Actions ---
         ActionDefinition(
             action_id="TR-01",
@@ -123,3 +126,4 @@ def get_action_library() -> List[ActionDefinition]:
             explanation_template="Recycling diverts materials from high-emission incineration and landfilling processes."
         )
     ]
+    return _ACTION_LIBRARY

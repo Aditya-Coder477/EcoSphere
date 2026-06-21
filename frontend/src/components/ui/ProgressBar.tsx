@@ -34,12 +34,13 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
   className,
 }) => {
   const pct = Math.min(100, Math.max(0, (value / max) * 100));
+  const labelId = React.useId();
 
   return (
     <div className={cn('w-full', className)}>
       {(label || showLabel) && (
         <div className="flex justify-between items-center mb-1.5">
-          {label && <span className="text-xs text-text-muted">{label}</span>}
+          {label && <span id={labelId} className="text-xs text-text-muted">{label}</span>}
           {showLabel && (
             <span className="text-xs font-medium text-text-main">
               {Math.round(pct)}%
@@ -52,6 +53,8 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
         aria-valuenow={value}
         aria-valuemin={0}
         aria-valuemax={max}
+        aria-labelledby={label ? labelId : undefined}
+        aria-label={!label ? 'Progress' : undefined}
         className={cn('w-full rounded-full bg-surface border border-border/50 overflow-hidden', sizeMap[size])}
       >
         <div

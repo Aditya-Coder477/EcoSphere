@@ -15,6 +15,8 @@ class GeminiClient:
         api_key = os.environ.get("GEMINI_API_KEY")
         if not api_key:
             log.warning("GEMINI_API_KEY environment variable not set. LLM calls will fail.")
+            # Use a dummy key to prevent Client instantiation crash in testing/dev environments
+            api_key = "dummy-api-key-placeholder"
             
         self.client = genai.Client(api_key=api_key)
         self.model_name = model_name

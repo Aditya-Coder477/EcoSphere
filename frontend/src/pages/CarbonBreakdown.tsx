@@ -58,7 +58,7 @@ const CarbonBreakdown = () => {
       ) : (
         <>
           {/* Category tiles */}
-          <div className="grid gap-4 grid-cols-2 md:grid-cols-4">
+          <div className="grid gap-4 grid-cols-2 md:grid-cols-4" role="group" aria-label="Emission categories">
             {breakdown.map((cat) => {
               const Icon = ICON_MAP[cat.icon] ?? Car;
               const isActive = selected === cat.key;

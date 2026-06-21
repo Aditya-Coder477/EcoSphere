@@ -20,16 +20,28 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title=settings.PROJECT_NAME,
     version="1.0.0",
-    openapi_url=f"{settings.API_V1_STR}/openapi.json"
+    openapi_url=f"{settings.API_V1_STR}/openapi.json",
 )
 
-# CORS
+# ---------------------------------------------------------------------------
+# CORS middleware
+# ---------------------------------------------------------------------------
+# Security: allow_credentials=True is incompatible with allow_origins=["*"]
+# per the Fetch spec and browser enforcement. When origins is the wildcard we
+# must set allow_credentials=False to avoid browsers blocking preflight.
+_cors_wildcard = settings.BACKEND_CORS_ORIGINS == ["*"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.BACKEND_CORS_ORIGINS,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_credentials=not _cors_wildcard,  # False for wildcard, True for explicit origins
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization", "X-Request-ID"],
+)
+
+logger.info(
+    "CORS configured | origins=%s | credentials=%s",
+    settings.BACKEND_CORS_ORIGINS,
+    not _cors_wildcard,
 )
 
 # Timing middleware

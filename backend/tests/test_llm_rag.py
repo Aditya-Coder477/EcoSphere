@@ -5,14 +5,10 @@ from fastapi.testclient import TestClient
 
 client = TestClient(app)
 
-# We need to mock the GeminiClient and RAGService to avoid real API calls and slow test execution
-@patch("src.llm.gemini_client.genai.GenerativeModel.generate_content")
+@patch("src.llm.gemini_client.GeminiClient.generate_content")
 def test_llm_explain(mock_generate):
-    # Setup mock
-    mock_response = MagicMock()
-    mock_response.text = "Your transport emissions are high, but you can reduce them."
-    mock_response.prompt_feedback.block_reason = None
-    mock_generate.return_value = mock_response
+    # Setup mock to return a string response directly
+    mock_generate.return_value = "Your transport emissions are high, but you can reduce them."
 
     payload = {
         "user_id": "test_user_01",
@@ -27,7 +23,7 @@ def test_llm_explain(mock_generate):
     assert "transport emissions are high" in data["data"]["explanation_text"]
     assert mock_generate.called
 
-@patch("src.llm.gemini_client.genai.GenerativeModel.generate_content")
+@patch("src.llm.gemini_client.GeminiClient.generate_content")
 @patch("src.rag.rag_service.RAGService.query")
 def test_rag_query(mock_rag_query, mock_generate):
     from src.rag.schemas import RetrievalResponse, RetrievalResult, Chunk, DocumentMetadata
@@ -45,11 +41,8 @@ def test_rag_query(mock_rag_query, mock_generate):
         weak_context=False
     )
     
-    # Mock Gemini generation (JSON format matching the new schema)
-    mock_response = MagicMock()
-    mock_response.text = '{"answer": "Based on the documents, public transit is very efficient.", "grounded_facts": ["Public transit is efficient"], "suggested_follow_up_questions": []}'
-    mock_response.prompt_feedback.block_reason = None
-    mock_generate.return_value = mock_response
+    # Mock Gemini generation (JSON string matching the expected schema)
+    mock_generate.return_value = '{"answer": "Based on the documents, public transit is very efficient.", "grounded_facts": ["Public transit is efficient"], "suggested_follow_up_questions": []}'
 
     payload = {
         "user_id": "test_user_01",

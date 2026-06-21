@@ -163,13 +163,13 @@ export const AssistantChat: React.FC<{ userId: string }> = ({ userId }) => {
                 )}
               </div>
 
-              {/* Follow-up question chips */}
               {msg.role === 'assistant' && msg.suggested_follow_up_questions && msg.suggested_follow_up_questions.length > 0 && (
                 <div className="flex gap-2 flex-wrap mt-1">
                   {msg.suggested_follow_up_questions.map((q, i) => (
                     <button
                       key={i}
                       onClick={() => handleSend(q)}
+                      aria-label={`Ask Climate Coach: "${q}"`}
                       className="text-xs text-left px-3 py-1.5 rounded bg-surface border border-border text-text-muted hover:text-text-main hover:border-accent/60 transition-colors"
                     >
                       {q}

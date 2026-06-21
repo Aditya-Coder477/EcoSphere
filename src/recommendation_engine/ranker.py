@@ -11,11 +11,21 @@ from .action_library import get_action_library
 from .rules import AdoptionEvaluator, RelevanceEvaluator
 from .scoring import ImpactScoreCalculator
 
+# ---------------------------------------------------------------------------
+# Named thresholds for impact-level labelling
+# ---------------------------------------------------------------------------
+# Adjust these to calibrate how aggressively "high" vs "medium" is assigned.
+# Tests import these names directly for boundary assertions.
+HIGH_IMPACT_THRESHOLD: float = 500.0
+MEDIUM_IMPACT_THRESHOLD: float = 100.0
+
+
 class RuleBasedRanker:
     """Core ranking logic combining rules and scores."""
-    
+
     def __init__(self):
         self.actions = get_action_library()
+
 
     def rank(self, ctx: RecommendationContext, top_n: int = 3) -> List[RankedRecommendation]:
         """Filters out ineligible actions, scores the rest, and returns the top N."""
@@ -49,11 +59,10 @@ class RuleBasedRanker:
                 cost=cost
             )
             
-            # Determine Impact Level label
-            # These thresholds could be configurable. 
-            if impact_score > 500:
+            # Determine Impact Level label using named thresholds
+            if impact_score > HIGH_IMPACT_THRESHOLD:
                 impact_level = "high"
-            elif impact_score > 100:
+            elif impact_score > MEDIUM_IMPACT_THRESHOLD:
                 impact_level = "medium"
             else:
                 impact_level = "low"

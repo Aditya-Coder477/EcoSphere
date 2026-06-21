@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAppStore } from '../store/useAppStore';
 import { StatCard } from '../components/dashboard/StatCard';
@@ -20,17 +20,14 @@ import { ROUTES } from '../constants/routes';
 const Dashboard = () => {
   const navigate = useNavigate();
   const { user, footprint, isDemoMode } = useAppStore();
-  const [data, setData] = useState<CarbonSummary | null>(null);
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  const data = useMemo(() => {
     const { data: resolved } = getDataOrFallback(
       footprint,
       mockCarbonSummary
     );
-    setData(resolved);
-    setLoading(false);
-  }, [footprint, isDemoMode]);
+    return resolved;
+  }, [footprint]);
 
   if (!user && !isDemoMode) {
     return (
@@ -43,7 +40,7 @@ const Dashboard = () => {
 
   const displayUser = user ?? mockUserProfile;
 
-  if (loading || !data) {
+  if (!data) {
     return (
       <div className="space-y-6">
         <SkeletonCard />
@@ -183,6 +180,7 @@ const Dashboard = () => {
           <button
             key={to}
             onClick={() => navigate(to)}
+            aria-label={label}
             className="glass-card p-4 flex items-center justify-between text-sm font-medium text-text-muted hover:text-text-main hover:border-primary/40 transition-all group"
           >
             <div className="flex items-center gap-2">
